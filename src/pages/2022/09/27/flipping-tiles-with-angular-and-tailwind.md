@@ -28,7 +28,7 @@ export interface Tile {
 
 The game board itself is a centered 4x4 CSS grid. `tiles` is an array of 16 `Tile` objects. `onReveal()` contains game logic to check for matches, but isn't important for the tile flipping animation.
 
-```HTML
+```html
 <main class="container mx-auto">
     <h1 class="text-5xl font-bold text-center pb-5">Memory Match</h1>
 
@@ -44,7 +44,7 @@ The look of each tile is defined entirely in Tailwind. In practice, it would be 
 
 This is all standard Tailwind except for the `tile`, `facedown`, and `faceup` classes at the beginning of each div. Those are the hooks we need to flip our tiles. Both inner `div` elements are positioned absolutely, so they are directly on top of each other. Only one face will be visible at a time, which will be controlled through CSS.
 
-```HTML
+```html
 <div class="tile relative w-full h-full aspect-square shadow-md" [ngClass]="{ 'revealed': tile.isRevealed }" (click)="onClick()">
     <div class="facedown absolute w-full h-full flex items-center justify-center bg-slate-100 border-black border-2 rounded-md"></div>
     <div class="faceup absolute w-full h-full flex items-center justify-center border-black border-2 rounded-md" [style.background-color]="tile.color"></div>
@@ -53,7 +53,7 @@ This is all standard Tailwind except for the `tile`, `facedown`, and `faceup` cl
 
 Each tile is not revealed by default, which means I want to show the `facedown` div. When the user clicks the tile, the `onClick()` handler will fire, inverting `isRevealed` and emitting an event.
 
-```Typescript
+```typescript
 export class TileComponent {
   @Input() tile!: Tile;
   @Output() revealed = new EventEmitter();
@@ -67,7 +67,7 @@ export class TileComponent {
 
 Now it's time to actually flip the tile through CSS. First, I set how long it takes to flip the tile with transition. Then, I set the [transform-style](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style) to `preserve-3d`, which is necessary to control how the child elements are positioned in 3D space.
 
-```CSS
+```css
 .tile  {
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -76,7 +76,7 @@ Now it's time to actually flip the tile through CSS. First, I set how long it ta
 
 Next, whenever a tile is revealed, I want to rotate it 180° on the Y-axis using [rotateY](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY). This gives the horizontal flip look I was going for. Setting [backface-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility) to hidden will hide the `div` for the other side of the tile. I rotated the `faceup` side 180° to start with so it is initially hidden. Now when the user clicks the tile, the `faceup` and `facedown` sides will swap. If `backface-visibility` was set to the default of `visible`, the user would still see the back side of the other div.
 
-```CSS
+```css
 .tile.revealed  {
     transform: rotateY(180deg);
 }
