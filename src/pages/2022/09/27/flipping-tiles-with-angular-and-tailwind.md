@@ -99,5 +99,5 @@ And putting it all together gave me the nice animation I was looking for.
 
 These resources were extremely helpful to me when getting started.
 
-- https://www.w3schools.com/howto/howto\_css\_flip\_card.asp
+- https://www.w3schools.com/howto/howto_css_flip_card.asp
 - https://weekendprojects.dev/posts/5-flip-animation-css-examples/
