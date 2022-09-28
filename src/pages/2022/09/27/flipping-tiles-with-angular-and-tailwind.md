@@ -1,5 +1,5 @@
 ---
-layout: ../../../../layouts/Layout.astro
+layout: ../../../../layouts/PostLayout.astro
 title: "Flipping Tiles With Angular and Tailwind"
 date: "2022-09-27"
 categories: 
