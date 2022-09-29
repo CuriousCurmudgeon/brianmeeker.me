@@ -11,7 +11,7 @@ tags:
 ---
 I was recently brushing up on my Angular skills to prep for a job interview. As part of that I started building a memory match game where users flip tiles looking for matching pairs. I quickly became distracted figuring out how to get a nice tile flip animation before ending up with a pretty nice result.
 
-![](https://brianmeekerme.files.wordpress.com/2022/09/tile_flip-1.gif?w=583)
+![Demo of clicking square tiles to flip them over with a nice animation](/assets/tile_flip.gif)
 
 Most of the styling is done with Tailwind. However, Tailwind has no support for the flipping transformation, so it was time to dive into some custom CSS.
 
@@ -93,7 +93,7 @@ Next, whenever a tile is revealed, I want to rotate it 180° on the Y-axis using
 
 And putting it all together gave me the nice animation I was looking for.
 
-![](https://brianmeekerme.files.wordpress.com/2022/09/tile_flip-1.gif?w=583)
+![Demo of clicking square tiles to flip them over with a nice animation](/assets/tile_flip.gif)
 
 # Resources
 
