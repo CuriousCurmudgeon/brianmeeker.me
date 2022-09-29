@@ -1,5 +1,4 @@
 ---
-layout: ../../../../layouts/PostLayout.astro
 title: "Setting Up ABP With OpenIddict on Azure App Services"
 date: "2022-08-29"
 categories: 
