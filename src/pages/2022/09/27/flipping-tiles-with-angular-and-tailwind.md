@@ -19,10 +19,12 @@ Most of the styling is done with Tailwind. However, Tailwind has no support for 
 
 I created a simple `Tile` interface to track the revealed color of the tile and if it is revealed right now.
 
+```typescript
 export interface Tile {
   color: string;
   isRevealed: boolean;
 }
+```
 
 The game board itself is a centered 4x4 CSS grid. `tiles` is an array of 16 `Tile` objects. `onReveal()` contains game logic to check for matches, but isn't important for the tile flipping animation.
 
