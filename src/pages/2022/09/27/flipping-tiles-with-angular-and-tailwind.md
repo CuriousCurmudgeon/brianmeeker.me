@@ -9,8 +9,6 @@ tags:
   - "css"
   - "tailwind"
 ---
-
-<h1>{ title }</h1>
 I was recently brushing up on my Angular skills to prep for a job interview. As part of that I started building a memory match game where users flip tiles looking for matching pairs. I quickly became distracted figuring out how to get a nice tile flip animation before ending up with a pretty nice result.
 
 ![](https://brianmeekerme.files.wordpress.com/2022/09/tile_flip-1.gif?w=583)
