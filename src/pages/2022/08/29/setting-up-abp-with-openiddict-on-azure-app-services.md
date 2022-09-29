@@ -50,12 +50,15 @@ OpenIddict helpfully [provides some code to generate certificates](https://docum
 using var algorithm = RSA.Create(keySizeInBits: 2048);
 
 var subject = new X500DistinguishedName("CN=Fabrikam Encryption Certificate");
-var request = new CertificateRequest(subject, algorithm, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
-request.CertificateExtensions.Add(new X509KeyUsageExtension(X509KeyUsageFlags.KeyEncipherment, critical: true));
+var request = new CertificateRequest(
+    subject, algorithm, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
+request.CertificateExtensions.Add(
+    new X509KeyUsageExtension(X509KeyUsageFlags.KeyEncipherment, critical: true));
 
 var certificate = request.CreateSelfSigned(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddYears(2));
 
-File.WriteAllBytes("encryption-certificate.pfx", certificate.Export(X509ContentType.Pfx, <INSERT_PASSWORD_HERE>));
+File.WriteAllBytes("encryption-certificate.pfx",
+    certificate.Export(X509ContentType.Pfx, <INSERT_PASSWORD_HERE>));
 ```
 
 And a signing certificate with
@@ -64,12 +67,15 @@ And a signing certificate with
 using var algorithm = RSA.Create(keySizeInBits: 2048);
 
 var subject = new X500DistinguishedName("CN=Fabrikam Signing Certificate");
-var request = new CertificateRequest(subject, algorithm, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
-request.CertificateExtensions.Add(new X509KeyUsageExtension(X509KeyUsageFlags.DigitalSignature, critical: true));
+var request = new CertificateRequest(
+    subject, algorithm, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
+request.CertificateExtensions.Add(
+    new X509KeyUsageExtension(X509KeyUsageFlags.DigitalSignature, critical: true));
 
 var certificate = request.CreateSelfSigned(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddYears(2));
 
-File.WriteAllBytes("signing-certificate.pfx", certificate.Export(X509ContentType.Pfx, <INSERT_PASSWORD_HERE>));
+File.WriteAllBytes("signing-certificate.pfx",
+    certificate.Export(X509ContentType.Pfx, <INSERT_PASSWORD_HERE>));
 ```
 
 THESE EXAMPLES ARE NOT IDENTICAL. I missed this myself when initially generating the certificates. Each certificate uses a different value for `X509KeyUsageFlags`. I accidentally generated both of them with `KeyEncipherment`. The encryption certificate loaded correctly, but I got the following error when trying to load the signing certificate. Generating the signing certificate correctly with a value of `DigitalSignature` fixed the error.
@@ -94,7 +100,8 @@ The way certificates are loaded varies by App Service platform. I'm using Linux,
 I started by making the certificates available to the App Service by running the command below. It sets the `WEBSITE_LOAD_CERTIFICATES` app setting for your Azure App Service. This controls what certificates will be available to your app.
 
 ```bash
-az webapp config appsettings set --name <app-name> --resource-group <resource-group-name> --settings WEBSITE_LOAD_CERTIFICATES=<comma-separated-certificate-thumbprints>
+az webapp config appsettings set --name <app-name> --resource-group <resource-group-name> \
+    --settings WEBSITE_LOAD_CERTIFICATES=<comma-separated-certificate-thumbprints>
 ```
 
 I could have also used the App Service's _Configuration_ screen in the Azure Portal. In either case, I had two certificates and I wanted to load both of them, so I used `*` instead of directly adding each thumbprint. If you want to be more selective, then you will need the individual thumbprints for each certificate that you want to load.
@@ -120,8 +127,10 @@ public override void PreConfigureServices(ServiceConfigurationContext context)
     {
         if (hostingEnvironment.IsProduction())
         {
-            options.AddEncryptionCertificate(LoadCertificate(configuration["AuthServer:EncryptionCertificateThumbprint"]));
-            options.AddSigningCertificate(LoadCertificate(configuration["AuthServer:SigningCertificateThumbprint"]));
+            options.AddEncryptionCertificate(LoadCertificate(
+                configuration["AuthServer:EncryptionCertificateThumbprint"]));
+            options.AddSigningCertificate(LoadCertificate(
+                configuration["AuthServer:SigningCertificateThumbprint"]));
         }
     });
 
