@@ -1,6 +1,8 @@
 ---
 title: "Setting Up ABP With OpenIddict on Azure App Services"
 date: "2022-08-29"
+heroImage: "/assets/setting-up-abp-with-openiddict-on-azure-app-services/abp-logo.png"
+heroImageAlt: "ABP logo"
 categories: 
   - "programming"
 tags: 
@@ -9,8 +11,6 @@ tags:
   - "c-sharp"
   - "openiddict"
 ---
-
-![ABP logo](/assets/setting-up-abp-with-openiddict-on-azure-app-services/abp-logo.png)
 
 In prep for building a SasS product, I've been spending a lot of time the past couple of weeks getting familiar with [ABP Framework](https://abp.io/). ABP builds on top of ASP.NET Core to provide "complete infrastructure to create modern web applications by following the best practices and conventions of software development." As a solo dev, I don't want to spend all of my time rebuilding common infrastructure, so I'm relying on ABP to provide that for me so I can concentrate on business concerns.
 

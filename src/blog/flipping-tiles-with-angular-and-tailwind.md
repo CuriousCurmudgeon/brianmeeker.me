@@ -1,6 +1,8 @@
 ---
 title: "Flipping Tiles With Angular and Tailwind"
 date: "2022-09-27"
+heroImage: "/assets/tile_flip.gif"
+heroImageAlt: "Demo of clicking square tiles to flip them over with a nice animation"
 categories: 
   - "programming"
 tags: 
@@ -9,8 +11,6 @@ tags:
   - "tailwind"
 ---
 I was recently brushing up on my Angular skills to prep for a job interview. As part of that I started building a memory match game where users flip tiles looking for matching pairs. I quickly became distracted figuring out how to get a nice tile flip animation before ending up with a pretty nice result.
-
-![Demo of clicking square tiles to flip them over with a nice animation](/assets/tile_flip.gif)
 
 Most of the styling is done with Tailwind. However, Tailwind has no support for the flipping transformation, so it was time to dive into some custom CSS.
 

@@ -39,12 +39,15 @@ const { Content } = Astro.props.post;
 const {
   title,
   date,
+  heroImage,
+  heroImageAlt
 } = Astro.props.post.frontmatter;
 
 ---
 <Layout title={title}>
     <article class="prose max-w-4xl sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto px-4 py-12 sm:px-8 md:px-12 text-sm sm:text-base leading-8 sm:leading-7 transition-all">
         <section class="mb-16 text-center">
+            { heroImage && <img class="object-cover mx-auto" src={ heroImage } alt={ heroImageAlt }> }
             <p class="m-0">{ date }</p>
             <h1 class="mt-4 text-2xl sm:text-4xl font-bold transition-all">{ title }</h1>
         </section>
