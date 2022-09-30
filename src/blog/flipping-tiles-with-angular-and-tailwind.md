@@ -1,7 +1,7 @@
 ---
 title: "Flipping Tiles With Angular and Tailwind"
 date: "2022-09-27"
-heroImage: "/assets/tile_flip.gif"
+heroImage: "/assets/flipping-tiles-with-angular-and-tailwind/tile_flip.gif"
 heroImageAlt: "Demo of clicking square tiles to flip them over with a nice animation"
 categories: 
   - "programming"
@@ -92,7 +92,7 @@ Next, whenever a tile is revealed, I want to rotate it 180° on the Y-axis using
 
 And putting it all together gave me the nice animation I was looking for.
 
-![Demo of clicking square tiles to flip them over with a nice animation](/assets/tile_flip.gif)
+![Demo of clicking square tiles to flip them over with a nice animation](/assets/flipping-tiles-with-angular-and-tailwind/tile_flip.gif)
 
 # Resources
 
