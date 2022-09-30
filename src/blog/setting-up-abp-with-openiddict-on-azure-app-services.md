@@ -3,8 +3,6 @@ title: "Setting Up ABP With OpenIddict on Azure App Services"
 date: "2022-08-29"
 heroImage: "/assets/setting-up-abp-with-openiddict-on-azure-app-services/abp-logo.png"
 heroImageAlt: "ABP logo"
-categories: 
-  - "programming"
 tags: 
   - "abp"
   - "azure"

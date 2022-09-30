@@ -2,7 +2,6 @@
 title: "From C# To Perl: Introduction"
 date: "2010-12-30"
 categories: 
-  - "from-c-to-perl"
 tags: 
   - "c-sharp"
   - "perl"
