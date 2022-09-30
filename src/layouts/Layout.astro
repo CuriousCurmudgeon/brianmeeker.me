@@ -18,22 +18,20 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body
-    class="min-h-screen w-screen bg-white flex flex-col font-mono overflow-x-hidden"
+    class="min-h-screen w-screen bg-white flex flex-col font-mono text-white overflow-x-hidden"
   >
-    <nav
-      class="p-4 sm:py-6 sm:px-12 flex items-center bg-green-900 sm:text-xl text-white"
-    >
+    <nav class="p-4 sm:py-6 sm:px-12 flex items-center bg-green-900 sm:text-xl">
       <NavLink href="/">
         <img
           class="mr-2 h-8 w-8 rounded-full grayscale"
           src="/assets/avatar_64x64.png"
           height="32"
           width="32"
-          alt="Leosvel Pérez Espinosa avatar"
+          alt="Brian Meeker avatar"
         />
         <span>brianmeeker.me</span>
       </NavLink>
-      <div class="flex flex-1 gap-6 justify-end items-center">
+      <div class="flex flex-1 gap-2 md:gap-6 justify-end items-center">
         <NavLink href="/speaking">Speaking</NavLink>
         <NavLink href="/contact">Contact</NavLink>
         <NavLink href="/about">About</NavLink>
@@ -44,9 +42,7 @@ const { title } = Astro.props;
       <slot />
     </main>
 
-    <footer
-      class="p-4 sm:py-6 sm:px-12 flex items-center bg-green-900 text-xs text-white"
-    >
+    <footer class="p-4 sm:py-6 sm:px-12 flex items-center bg-green-900 text-xs">
       <div class="mx-auto">© 2022 Copyright: Brian Meeker</div>
     </footer>
   </body>
