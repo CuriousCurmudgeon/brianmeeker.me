@@ -97,6 +97,15 @@ And putting it all together gave me the nice animation I was looking for.
 # Resources
 
 These resources were extremely helpful to me when getting started.
-
-- https://www.w3schools.com/howto/howto_css_flip_card.asp
-- https://weekendprojects.dev/posts/5-flip-animation-css-examples/
+<ul class="break-words">
+  <li>
+    <a href="https://www.w3schools.com/howto/howto_css_flip_card.asp">
+      https://www.w3schools.com/howto/howto_css_flip_card.asp
+    </a>
+  </li>
+  <li>
+    <a href="https://weekendprojects.dev/posts/5-flip-animation-css-examples/">
+      https://weekendprojects.dev/posts/5-flip-animation-css-examples/
+    </a>
+  </li>
+</ul>
