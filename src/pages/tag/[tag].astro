@@ -1,0 +1,40 @@
+---
+import _ from "lodash";
+import Layout from "../../layouts/Layout.astro";
+
+interface Frontmatter {
+  title: string;
+  date: string;
+  tags: string[];
+}
+
+export async function getStaticPaths() {
+  const posts = (await Astro.glob<Frontmatter>("../../blog/*.md")).flatMap(
+    (post) => {
+      return post.frontmatter.tags.map((tag) => {
+        return {
+          ...post,
+          frontmatter: { ...post.frontmatter, tags: [tag] },
+        };
+      });
+    }
+  );
+  const tagGroups = _.groupBy(posts, (post) => post.frontmatter.tags[0]);
+
+  return _.map(tagGroups, (posts, tag) => ({
+    params: {
+      tag: tag,
+    },
+    props: { posts, tag },
+  }));
+}
+
+const { posts, tag } = Astro.props;
+---
+
+<Layout title={tag}>
+  <div class="flex flex-col">
+    <h1 class="text-black">Tag: {tag}</h1>
+    <p class="text-black">Number of posts: {posts.length}</p>
+  </div>
+</Layout>
