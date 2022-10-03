@@ -5,8 +5,26 @@ interface Frontmatter {
   date: string;
 }
 
-export default function buildUrl(post: MarkdownInstance<Frontmatter>): string {
-  const dateTime = DateTime.fromISO(post.frontmatter.date);
-  const slug = post.file.split("/").pop()!.split(".").shift();
-  return `/${dateTime.toFormat("yyyy")}/${dateTime.toFormat("MM")}/${dateTime.toFormat("dd")}/${slug}`;
+interface UrlParts {
+  slug: string;
+  year: string;
+  month: string;
+  day: string;
 }
+
+function buildUrlParts(post: MarkdownInstance<Frontmatter>): UrlParts {
+  const dateTime = DateTime.fromISO(post.frontmatter.date);
+  return {
+    slug: post.file.split("/").pop()!.split(".").shift()!,
+    year: dateTime.toFormat("yyyy"),
+    month: dateTime.toFormat("MM"),
+    day: dateTime.toFormat("dd")
+  }
+}
+
+function buildUrl(post: MarkdownInstance<Frontmatter>): string {
+  const { slug, year, month, day } = buildUrlParts(post);
+  return `/${year}/${month}/${day}/${slug}`;
+}
+
+export { buildUrl, buildUrlParts };

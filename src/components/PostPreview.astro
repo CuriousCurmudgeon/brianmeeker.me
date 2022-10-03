@@ -1,9 +1,9 @@
 ---
-import urlBuilder from "../utilities/urlBuilder";
+import { buildUrl } from "../utilities/urlBuilder";
 
 const { title, description, date, heroImage, heroImageAlt, tags } =
   Astro.props.post.frontmatter;
-const url = urlBuilder(Astro.props.post);
+const url = buildUrl(Astro.props.post);
 ---
 
 <article class="flex flex-col text-black shadow my-4">

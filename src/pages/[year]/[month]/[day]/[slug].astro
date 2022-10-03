@@ -1,6 +1,7 @@
 ---
 import Layout from "../../../../layouts/Layout.astro";
 import { DateTime } from "luxon";
+import { buildUrlParts } from "../../../../utilities/urlBuilder";
 
 interface Frontmatter {
   title: string;
@@ -18,10 +19,7 @@ export async function getStaticPaths() {
       const dateTime = DateTime.fromISO(post.frontmatter.date);
       return {
         ...post,
-        slug: post.file.split("/").pop()!.split(".").shift(),
-        year: dateTime.toFormat("yyyy"),
-        month: dateTime.toFormat("MM"),
-        day: dateTime.toFormat("dd"),
+        ...buildUrlParts(post),
       };
     });
   return posts.map((post) => ({
