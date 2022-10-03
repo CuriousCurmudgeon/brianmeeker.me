@@ -1,5 +1,6 @@
 ---
 title: "Flipping Tiles With Angular and Tailwind"
+description: "Learn how to implement a nice tile flip animation with plain CSS, Tailwind, and Angular"
 date: "2022-09-27"
 heroImage: "/assets/flipping-tiles-with-angular-and-tailwind/tile_flip.gif"
 heroImageAlt: "Demo of clicking square tiles to flip them over with a nice animation"

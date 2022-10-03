@@ -1,5 +1,6 @@
 ---
 title: "From C# To Perl: Introduction"
+description: "After over three years as a C# developer I have made the jump to Perl. Let's see what we can learn on this journey."
 date: "2010-12-30"
 categories: 
 tags: 
