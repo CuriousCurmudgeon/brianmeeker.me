@@ -24,7 +24,7 @@ const url = buildUrl(Astro.props.post);
     <p class="text-sm pb-1">{date}</p>
     <ul class="flex gap-2 pb-3">
       {
-        tags.map((tag) => (
+        tags.map((tag: string) => (
           <li>
             <a
               href={"/tag/" + tag}

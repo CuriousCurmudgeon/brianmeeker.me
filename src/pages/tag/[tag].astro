@@ -47,6 +47,6 @@ const { posts, tag } = Astro.props;
       Tag: <span class="uppercase">{tag}</span> ({posts.length})
     </h1>
 
-    {posts.map((post) => <PostPreview {post} />)}
+    {posts.map((post: any) => <PostPreview {post} />)}
   </div>
 </Layout>
