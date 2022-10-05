@@ -23,12 +23,19 @@ export async function getStaticPaths() {
   );
   const tagGroups = _.groupBy(posts, (post) => post.frontmatter.currentTag);
 
-  return _.map(tagGroups, (posts, tag) => ({
-    params: {
-      tag: tag,
-    },
-    props: { posts, tag },
-  }));
+  return _.map(tagGroups, (posts, tag) => {
+    const sortedPosts = posts.sort(
+      (a, b) =>
+        new Date(b.frontmatter.date).valueOf() -
+        new Date(a.frontmatter.date).valueOf()
+    );
+    return {
+      params: {
+        tag: tag,
+      },
+      props: { posts: sortedPosts, tag },
+    };
+  });
 }
 
 const { posts, tag } = Astro.props;
