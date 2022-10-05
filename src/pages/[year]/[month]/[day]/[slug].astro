@@ -1,6 +1,5 @@
 ---
 import Layout from "../../../../layouts/Layout.astro";
-import { DateTime } from "luxon";
 import { buildUrlParts } from "../../../../utilities/urlBuilder";
 
 interface Frontmatter {
@@ -16,7 +15,6 @@ export async function getStaticPaths() {
         new Date(a.frontmatter.date).valueOf()
     )
     .map((post) => {
-      const dateTime = DateTime.fromISO(post.frontmatter.date);
       return {
         ...post,
         ...buildUrlParts(post),
