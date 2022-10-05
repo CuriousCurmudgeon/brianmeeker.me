@@ -1,7 +1,26 @@
 ---
+import PostPreview from "../components/PostPreview.astro";
 import Layout from "../layouts/Layout.astro";
+
+interface Frontmatter {
+  date: string;
+}
+
+const posts = (await Astro.glob<Frontmatter>("../blog/*.md")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.date).valueOf() -
+    new Date(a.frontmatter.date).valueOf()
+);
 ---
 
-<Layout title="Welcome to Astro." />
-
-<style></style>
+<Layout title="Brian Meeker">
+  <ol class="mx-auto px-4">
+    {
+      posts.map((post) => (
+        <li>
+          <PostPreview {post} />
+        </li>
+      ))
+    }
+  </ol>
+</Layout>
