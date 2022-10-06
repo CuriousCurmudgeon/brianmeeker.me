@@ -1,0 +1,57 @@
+---
+import _ from "lodash";
+import PostPreview from "../components/PostPreview.astro";
+import Layout from "../layouts/Layout.astro";
+
+interface Frontmatter {
+  date: string;
+  year: string;
+}
+
+export async function getStaticPaths() {
+  const posts = (await Astro.glob<Frontmatter>("../blog/*.md")).map(
+    (post) => {
+      const year = new Date(post.frontmatter.date).getFullYear();
+      return {
+        ...post,
+        frontmatter: { ...post.frontmatter, year: year },
+      };
+    }
+  );
+  const yearGroups = _.groupBy(posts, (post) => post.frontmatter.year);
+
+  return _.map(yearGroups, (posts, year) => {
+    const sortedPosts = posts.sort(
+      (a, b) =>
+        new Date(b.frontmatter.date).valueOf() -
+        new Date(a.frontmatter.date).valueOf()
+    );
+    return {
+      params: {
+        year: year,
+      },
+      props: { posts: sortedPosts, year },
+    };
+  });
+}
+
+const { posts, year } = Astro.props;
+---
+
+<Layout title={"Year: " + year}>
+  <div class="flex flex-col mx-auto">
+    <h1 class="text-black text-2xl text-center pt-3">
+      Year: <span class="uppercase">{year}</span> ({posts.length})
+    </h1>
+
+    <ol class="mx-auto px-4">
+      {
+        posts.map((post: any) => (
+          <li>
+            <PostPreview {post} />
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</Layout>
