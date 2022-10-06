@@ -1,5 +1,6 @@
 ---
 import Layout from "../../../../layouts/Layout.astro";
+import TagLink from "../../../../components/TagLink.astro";
 import { buildUrlParts } from "../../../../utilities/urlBuilder";
 
 interface Frontmatter {
@@ -32,7 +33,8 @@ export async function getStaticPaths() {
 }
 
 const { Content } = Astro.props.post;
-const { title, date, heroImage, heroImageAlt } = Astro.props.post.frontmatter;
+const { title, date, heroImage, heroImageAlt, tags } =
+  Astro.props.post.frontmatter;
 ---
 
 <Layout title={title}>
@@ -49,10 +51,19 @@ const { title, date, heroImage, heroImageAlt } = Astro.props.post.frontmatter;
           />
         )
       }
-      <p class="m-0">{date}</p>
       <h1 class="mt-4 text-2xl sm:text-4xl font-bold transition-all">
         {title}
       </h1>
+      <p class="m-0">{date}</p>
+      <ul class="not-prose flex gap-2 list-none justify-center">
+        {
+          tags.map((tag: any) => (
+            <li>
+              <TagLink {tag} />
+            </li>
+          ))
+        }
+      </ul>
     </section>
     <Content />
   </article>

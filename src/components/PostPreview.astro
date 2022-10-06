@@ -1,4 +1,5 @@
 ---
+import TagLink from "../components/TagLink.astro";
 import { buildUrl } from "../utilities/urlBuilder";
 
 const { title, description, date, heroImage, heroImageAlt, tags } =
@@ -24,14 +25,9 @@ const url = buildUrl(Astro.props.post);
     <p class="text-sm pb-1">{date}</p>
     <ul class="flex gap-2 pb-3">
       {
-        tags.map((tag: string) => (
+        tags.map((tag: any) => (
           <li>
-            <a
-              href={"/tag/" + tag}
-              class="text-blue-700 text-sm font-bold uppercase pb-4"
-            >
-              {tag}
-            </a>
+            <TagLink {tag} />
           </li>
         ))
       }
