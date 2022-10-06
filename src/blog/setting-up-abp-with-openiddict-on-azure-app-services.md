@@ -27,7 +27,10 @@ This generated a solution with a lot of projects. I passed `-u` to use Blazor as
 
 Naively deploying to the App Service without changing any OpenIddict configuration led to the following error
 
-`System.Security.Cryptography.CryptographicException: The owner of '/home/.dotnet/corefx/cryptography/x509stores/my' is not the current user.`
+```
+System.Security.Cryptography.CryptographicException:
+The owner of '/home/.dotnet/corefx/cryptography/x509stores/my' is not the current user.`
+```
 
 This was one of the few times in my career that I Googled a .NET exception and came up with almost no results. Luckily, I was able to find an [issue in the ABP repo](https://github.com/abpframework/abp/issues/13784) to get started.
 
@@ -78,8 +81,10 @@ File.WriteAllBytes("signing-certificate.pfx",
 
 THESE EXAMPLES ARE NOT IDENTICAL. I missed this myself when initially generating the certificates. Each certificate uses a different value for `X509KeyUsageFlags`. I accidentally generated both of them with `KeyEncipherment`. The encryption certificate loaded correctly, but I got the following error when trying to load the signing certificate. Generating the signing certificate correctly with a value of `DigitalSignature` fixed the error.
 
-`---> System.InvalidOperationException: The specified certificate is not a signing certificate.
-at Microsoft.Extensions.DependencyInjection.OpenIddictServerBuilder.AddSigningCertificate(X509Certificate2 certificate)`
+```
+---> System.InvalidOperationException: The specified certificate is not a signing certificate.
+at Microsoft.Extensions.DependencyInjection.OpenIddictServerBuilder.AddSigningCertificate(X509Certificate2 certificate)
+```
 
 # Uploading Certificates
 
