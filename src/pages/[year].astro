@@ -1,7 +1,6 @@
 ---
 import _ from "lodash";
-import PostPreview from "../components/PostPreview.astro";
-import Layout from "../layouts/Layout.astro";
+import PostPreviewList from "../components/PostPreviewList.astro";
 
 interface Frontmatter {
   date: string;
@@ -37,21 +36,4 @@ export async function getStaticPaths() {
 
 const { posts, year } = Astro.props;
 ---
-
-<Layout title={"Year: " + year}>
-  <div class="flex flex-col mx-auto">
-    <h1 class="text-black text-2xl text-center pt-3">
-      Year: <span class="uppercase">{year}</span> ({posts.length})
-    </h1>
-
-    <ol class="mx-auto px-4">
-      {
-        posts.map((post: any) => (
-          <li>
-            <PostPreview {post} />
-          </li>
-        ))
-      }
-    </ol>
-  </div>
-</Layout>
+<PostPreviewList label="Year" labelValue={year} {posts} />

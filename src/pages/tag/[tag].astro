@@ -1,7 +1,6 @@
 ---
 import _ from "lodash";
-import PostPreview from "../../components/PostPreview.astro";
-import Layout from "../../layouts/Layout.astro";
+import PostPreviewList from "../../components/PostPreviewList.astro";
 
 interface Frontmatter {
   title: string;
@@ -40,21 +39,4 @@ export async function getStaticPaths() {
 
 const { posts, tag } = Astro.props;
 ---
-
-<Layout title={"Tag: " + tag}>
-  <div class="flex flex-col mx-auto">
-    <h1 class="text-black text-2xl text-center pt-3">
-      Tag: <span class="uppercase">{tag}</span> ({posts.length})
-    </h1>
-
-    <ol class="mx-auto px-4">
-      {
-        posts.map((post: any) => (
-          <li>
-            <PostPreview {post} />
-          </li>
-        ))
-      }
-    </ol>
-  </div>
-</Layout>
+<PostPreviewList label="Tag" labelValue={tag} {posts} />
