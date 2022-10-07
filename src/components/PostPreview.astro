@@ -8,7 +8,7 @@ const url = buildUrl(Astro.props.post);
 ---
 
 <article
-  class="flex flex-col text-black border-2 border-slate-400 bg-slate-50 hover:border-slate-800 my-4 max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto px-4 py-4 sm:px-8 md:px-12 text-sm sm:text-base leading-8 sm:leading-7 transition-all"
+  class="flex flex-col border-2 border-slate-400 bg-slate-50 hover:border-slate-800 my-4 max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto px-4 py-4 sm:px-8 md:px-12 text-sm sm:text-base leading-8 sm:leading-7 transition-all"
 >
   <!-- Article Image -->
   {
@@ -19,9 +19,7 @@ const url = buildUrl(Astro.props.post);
     )
   }
   <div class="flex flex-col justify-start p-6">
-    <a href={url} class="text-2xl font-bold transition-all pb-4"
-      >{title}
-    </a>
+    <a href={url} class="text-2xl font-bold transition-all pb-4">{title}</a>
     <p class="text-sm pb-1">{date}</p>
     <ul class="flex gap-2 pb-3">
       {
@@ -33,7 +31,7 @@ const url = buildUrl(Astro.props.post);
       }
     </ul>
     <a href={url} class="pb-6">{description}</a>
-    <a href={url} class="uppercase hover:text-black">
+    <a href={url} class="uppercase">
       Continue Reading
       <svg
         xmlns="http://www.w3.org/2000/svg"
