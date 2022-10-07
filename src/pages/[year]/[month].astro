@@ -1,0 +1,51 @@
+---
+import _ from "lodash";
+import { DateTime } from "luxon";
+import PostPreviewList from "../../components/PostPreviewList.astro";
+
+interface Frontmatter {
+  date: string;
+  year: string;
+  month: string;
+  key: string;
+}
+
+export async function getStaticPaths() {
+  const posts = (await Astro.glob<Frontmatter>("../../blog/*.md")).map(
+    (post) => {
+      const dateTime = DateTime.fromISO(post.frontmatter.date);
+      return {
+        ...post,
+        frontmatter: {
+          ...post.frontmatter,
+          year: dateTime.toFormat("yyyy"),
+          month: dateTime.toFormat("MM"),
+          key: dateTime.toFormat("yyyy/MM"),
+        },
+      };
+    }
+  );
+  console.log(posts);
+  const groups = _.groupBy(posts, (post) => post.frontmatter.key);
+
+  return _.map(groups, (posts, key) => {
+    const sortedPosts = posts.sort(
+      (a, b) =>
+        new Date(b.frontmatter.date).valueOf() -
+        new Date(a.frontmatter.date).valueOf()
+    );
+    const [year, month] = key.split("/");
+    return {
+      params: {
+        year: year,
+        month: month,
+      },
+      props: { posts: sortedPosts, year },
+    };
+  });
+}
+
+const { posts, year } = Astro.props;
+---
+
+<PostPreviewList label="Year" labelValue={year} {posts} />
