@@ -1,5 +1,5 @@
 ---
-import Layout from "../../../../layouts/Layout.astro";
+import ProseLayout from "../../../../layouts/ProseLayout.astro";
 import TagLink from "../../../../components/TagLink.astro";
 import { buildUrlParts } from "../../../../utilities/urlBuilder";
 
@@ -37,7 +37,7 @@ const { title, date, heroImage, heroImageAlt, tags } =
   Astro.props.post.frontmatter;
 ---
 
-<Layout title={title}>
+<ProseLayout title={title}>
   <article
     class="prose max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto px-4 py-4 sm:px-8 md:px-12 text-sm sm:text-base leading-8 sm:leading-7 transition-all"
   >
@@ -67,4 +67,4 @@ const { title, date, heroImage, heroImageAlt, tags } =
     </section>
     <Content />
   </article>
-</Layout>
+</ProseLayout>
