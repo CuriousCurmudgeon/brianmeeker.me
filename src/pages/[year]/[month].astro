@@ -25,7 +25,7 @@ export async function getStaticPaths() {
       };
     }
   );
-  console.log(posts);
+
   const groups = _.groupBy(posts, (post) => post.frontmatter.key);
 
   return _.map(groups, (posts, key) => {
