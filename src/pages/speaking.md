@@ -2,6 +2,8 @@
 layout: ../layouts/ProseLayout.astro
 title: "Speaking"
 ---
+<h1 class="text-center">Speaking</h1>
+
 ![Brian Meeker speaking at CodeMash 2020](https://brianmeekerme.files.wordpress.com/2020/08/mvimg_20200110_095537-e1596391360432.jpg?w=1024)
 
 ## From Punch Cards to Git: A Brief History of Version Control
