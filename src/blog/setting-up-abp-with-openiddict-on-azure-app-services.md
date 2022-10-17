@@ -11,7 +11,7 @@ tags:
   - "openiddict"
 ---
 
-In prep for building a SasS product, I've been spending a lot of time the past couple of weeks getting familiar with [ABP Framework](https://abp.io/). ABP builds on top of ASP.NET Core to provide "complete infrastructure to create modern web applications by following the best practices and conventions of software development." As a solo dev, I don't want to spend all of my time rebuilding common infrastructure, so I'm relying on ABP to provide that for me so I can concentrate on business concerns.
+In prep for building a SaaS product, I've been spending a lot of time the past couple of weeks getting familiar with [ABP Framework](https://abp.io/). ABP builds on top of ASP.NET Core to provide "complete infrastructure to create modern web applications by following the best practices and conventions of software development." As a solo dev, I don't want to spend all of my time rebuilding common infrastructure, so I'm relying on ABP to provide that for me so I can concentrate on business concerns.
 
 The community is currently in a bit of flux around authentication, so I decided to jump in with the latest version, 6.0.0-rc3. This release switches from [IdentityServer4](https://github.com/IdentityServer/IdentityServer4) to [OpenIddict](https://github.com/openiddict/openiddict-core) for authentication. The gory details for this switch are available on [GitHub](https://github.com/abpframework/abp/issues/11989).
 
