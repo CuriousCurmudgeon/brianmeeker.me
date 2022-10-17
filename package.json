@@ -13,7 +13,7 @@
     "@astrojs/rss": "^1.0.2",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^1.0.1",
-    "astro": "^1.2.2",
+    "astro": "^1.5.0",
     "luxon": "^3.0.4",
     "tw-elements": "^1.0.0-alpha12"
   },
