@@ -14,8 +14,10 @@ interface UrlParts {
 
 function buildUrlParts(post: MarkdownInstance<Frontmatter>): UrlParts {
   const dateTime = DateTime.fromISO(post.frontmatter.date);
+  const filename = post.file.split("/").pop()!.split("_").pop()!;
+  console.log(filename);
   return {
-    slug: post.file.split("/").pop()!.split(".").shift()!,
+    slug: filename.split(".").shift()!,
     year: dateTime.toFormat("yyyy"),
     month: dateTime.toFormat("MM"),
     day: dateTime.toFormat("dd")
