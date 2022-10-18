@@ -23,11 +23,12 @@ const url = buildUrl(Astro.props.post);
     <p class="text-sm pb-1">{date}</p>
     <ul class="flex gap-2 pb-3">
       {
-        tags.map((tag: any) => (
-          <li>
-            <TagLink {tag} />
-          </li>
-        ))
+        tags &&
+          tags.map((tag: any) => (
+            <li>
+              <TagLink {tag} />
+            </li>
+          ))
       }
     </ul>
     <a href={url} class="pb-6">{description}</a>

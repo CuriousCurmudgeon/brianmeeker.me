@@ -57,11 +57,12 @@ const { title, date, heroImage, heroImageAlt, tags } =
       <p class="m-0">{date}</p>
       <ul class="not-prose flex gap-2 list-none justify-center">
         {
-          tags.map((tag: any) => (
-            <li>
-              <TagLink {tag} />
-            </li>
-          ))
+          tags &&
+            tags.map((tag: any) => (
+              <li>
+                <TagLink {tag} />
+              </li>
+            ))
         }
       </ul>
     </section>
