@@ -10,16 +10,16 @@ interface Frontmatter {
 }
 
 export async function getStaticPaths() {
-  const posts = (await Astro.glob<Frontmatter>("../../blog/*.md")).flatMap(
-    (post) => {
+  const posts = (await Astro.glob<Frontmatter>("../../blog/*.md"))
+    .filter((post) => post.frontmatter.tags)
+    .flatMap((post) => {
       return post.frontmatter.tags.map((tag) => {
         return {
           ...post,
           frontmatter: { ...post.frontmatter, currentTag: [tag] },
         };
       });
-    }
-  );
+    });
   const tagGroups = _.groupBy(posts, (post) => post.frontmatter.currentTag);
 
   return _.map(tagGroups, (posts, tag) => {
@@ -39,4 +39,5 @@ export async function getStaticPaths() {
 
 const { posts, tag } = Astro.props;
 ---
+
 <PostPreviewList label="Tag" labelValue={tag} {posts} />
