@@ -14,7 +14,7 @@ const posts = (await Astro.glob<Frontmatter>("../blog/*.md")).sort(
 ---
 
 <Layout title="Brian Meeker">
-  <ol class="mx-auto px-4">
+  <ol class="w-full px-4">
     {
       posts.map((post) => (
         <li>
