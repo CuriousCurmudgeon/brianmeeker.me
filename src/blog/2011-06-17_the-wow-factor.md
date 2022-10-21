@@ -3,12 +3,9 @@ title: "The Wow Factor"
 description: "Brief thoughts on Perl, Rails, and \"the wow factor.\""
 date: "2011-06-17"
 tags: 
-  - "dotcloud"
-  - "heroku"
   - "perl"
   - "rails"
   - "ruby"
-  - "stackato"
 ---
 
 One thing that I find Perl to be lacking is a "wow" factor. Something so easy and awesome that within 5 minutes you're sold on it. I was reminded of these after starting a side project with Ruby on Rails and [Heroku](http://www.heroku.com/).
