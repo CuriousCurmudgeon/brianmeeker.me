@@ -1,7 +1,7 @@
 ---
 title: "Knowing When To Quit"
 description: "A personal story about how I knew it was time to quit a job that wasn't working."
-date: "2014-05-12"
+date: "2014-05-11"
 ---
 
 _**Note:** I started this post in October 2012 after quitting my previous job at the end of February 2012. I never posted it, but feel it is appropriate now that the company exists in name only. I've made slight changes, but most of the post exists as I originally wrote it._

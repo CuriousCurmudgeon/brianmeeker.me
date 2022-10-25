@@ -1,7 +1,7 @@
 ---
 title: "Setting Expectations With the Cone of Uncertainty"
 description: "I've been doing a lot of planning and estimating at work the past couple weeks. This led me to brush off an estimation technique I hadn't used in a long time, the cone of uncertainty."
-date: "2021-11-12"
+date: "2021-11-11"
 heroImage: "/assets/2021-11-12_setting-expectations-with-the-cone-of-uncertainty/cone_of_uncertainty_whiteboard.jpg"
 heroImageAlt: "Hand drawn image of the cone of uncertainty on a whiteboard"
 tags: 

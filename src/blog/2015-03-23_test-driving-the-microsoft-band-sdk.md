@@ -1,7 +1,7 @@
 ---
 title: "Test Driving the Microsoft Band SDK"
 description: "TL;DR: The Band SDK is currently very much a preview and you should wait if you want to do anything serious with it. You're very limited in functionality."
-date: "2015-03-24"
+date: "2015-03-23"
 ---
 
 TL;DR: The Band SDK is currently very much a preview and you should wait if you want to do anything serious with it. You're very limited in functionality.

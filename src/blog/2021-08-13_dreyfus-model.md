@@ -1,7 +1,7 @@
 ---
 title: "Dreyfus Model"
 description: "Working through where I am at in various skills according to the Dreyfuss model"
-date: "2021-08-14"
+date: "2021-08-13"
 heroImage: "/assets/2021-08-14_dreyfus-model/your_brain_on_typescript.png"
 heroImageAlt: "AI generated image of a brain with the TypeScript logo on folds"
 ---

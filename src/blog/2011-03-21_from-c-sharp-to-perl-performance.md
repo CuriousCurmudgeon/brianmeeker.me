@@ -1,7 +1,7 @@
 ---
 title: "From C# To Perl: Performance"
 description: "A superficial performance comparison of C# and Perl"
-date: "2011-03-22"
+date: "2011-03-21"
 tags: 
   - "c-sharp"
   - "performance"

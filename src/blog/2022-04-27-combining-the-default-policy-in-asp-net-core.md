@@ -1,7 +1,7 @@
 ---
 title: "Combining the Default Policy in ASP.NET Core"
 description: "ASP.NET Core's policy-based authorization allows you to combine policies. Using this in combination with the default policy can reduce duplication."
-date: "2022-04-28"
+date: "2022-04-27"
 heroImage: "/assets/2022-04-28-combining-the-default-policy-in-asp-net-core/fix_all_the_things.jpg"
 heroImageAlt: "A version of the 'all the things' meme that says 'fix all the things'"
 tags: 

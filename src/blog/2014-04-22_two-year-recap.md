@@ -1,7 +1,7 @@
 ---
 title: "Two Year Recap"
 description: "What have I been up to for the past two years?"
-date: "2014-04-23"
+date: "2014-04-22"
 ---
 
 The short recap of where I've been for the past 2 years.

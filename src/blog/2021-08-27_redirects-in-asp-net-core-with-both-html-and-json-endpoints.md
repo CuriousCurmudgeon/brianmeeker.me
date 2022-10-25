@@ -1,7 +1,7 @@
 ---
 title: "Redirects in ASP.NET Core With Both HTML and JSON Endpoints"
 description: "This past week I ran into the problem of retrofitting an endpoint that returns JSON into an app that up until now has returned HTML from all endpoints. Luckily, ASP.NET Core makes it easy to customize the behavior."
-date: "2021-08-28"
+date: "2021-08-27"
 tags: 
   - "asp-net-core"
   - "c-sharp"

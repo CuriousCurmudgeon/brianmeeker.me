@@ -1,6 +1,6 @@
 ---
 title: "How I Focus: Forest"
-date: "2020-08-08"
+date: "2020-08-07"
 description: "I have worked remotely from home as consultant for over eight years now. Keeping focus during work is a constant struggle for me. I'm endlessly inventive in coming up with new ways to distract myself from doing work when I don't want to. One tool I use to combat this is Forest, a distraction blocking app for your phone."
 heroImage: "/assets/2020-08-08_how-i-focus-forest/forest_icon_circle.png"
 heroImageAlt: "Forest app icon. A tree is germinating out of soil"

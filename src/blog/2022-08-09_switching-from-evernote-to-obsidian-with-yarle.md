@@ -1,7 +1,7 @@
 ---
 title: "Switching From Evernote To Obsidian With Yarle"
 description: "How I exported 5,408 notes from Evernote and converted them into Markdown for Obsidian"
-date: "2022-08-10"
+date: "2022-08-09"
 heroImage: "/assets/2022-08-10_switching-from-evernote-to-obsidian-with-yarle/obsidian_logo.png"
 heroImageAlt: "Logo for Obsidian"
 tags: 

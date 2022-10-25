@@ -1,7 +1,7 @@
 ---
 title: "Lessons Learned With Stripe Subscriptions"
 description: "So, you've got a new product or business idea and you think selling subscriptions is the way to go. Here are some issues to keep in mind as you get started."
-date: "2021-11-13"
+date: "2021-11-12"
 heroImage: "/assets/2021-11-13_lessons-learned-with-stripe-subscriptions/stripe_wordmark.png"
 heroImageAlt: "Wordmark for Stripe"
 tags: 

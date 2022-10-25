@@ -1,7 +1,7 @@
 ---
 title: "Perl From The Outside"
 description: "Reflections on Perl and the Perl community after six months as a full-time Perl dev."
-date: "2011-05-24"
+date: "2011-05-23"
 tags: 
   - "c-sharp"
   - "perl"

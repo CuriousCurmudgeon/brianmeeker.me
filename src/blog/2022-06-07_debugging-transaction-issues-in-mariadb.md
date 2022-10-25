@@ -1,7 +1,7 @@
 ---
 title: "Debugging Transaction Issues In MariaDB"
 description: "Transactions are great until they aren't. I was reminded of this the past couple of days while trying to figure out why some code I was refactoring was all of a sudden timing out."
-date: "2022-06-08"
+date: "2022-06-07"
 tags: 
   - "mariadb"
 ---

@@ -2,7 +2,7 @@
 title: "Mapping View Model Dependencies with MvvmCross and AutoMapper"
 description: "
 AutoMapper is one of those amazing tools that I wish I was better with. It's incredibly flexible, but I often throw in the towel and map things myself when it starts getting complicated. A recent pain point has been view models in a MvvmCross project."
-date: "2015-02-23"
+date: "2015-02-22"
 tags:
   - "c-sharp"
   - "automapper"

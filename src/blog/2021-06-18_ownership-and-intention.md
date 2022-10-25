@@ -1,7 +1,7 @@
 ---
 title: "Ownership and Intention"
 description: "tl;dr: I'm joining Husmus as their Director of Engineering."
-date: "2021-06-19"
+date: "2021-06-18"
 tags: 
   - "husmus"
   - "job-search"

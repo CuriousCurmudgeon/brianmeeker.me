@@ -1,7 +1,7 @@
 ---
 title: "How I Focus: Cold Turkey"
 description: "How I use Cold Turkey to give me the power to fight against my tendency to fall down the internet rabbit hole and not actually get anything done."
-date: "2020-08-20"
+date: "2020-08-19"
 heroImage: "/assets/2020-08-20_how-i-focus-cold-turkey/cold_turkey_logo.png"
 heroImageAlt: "Logo for the Cold Turkey distraction blocking app"
 tags: 

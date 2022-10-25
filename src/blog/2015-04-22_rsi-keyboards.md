@@ -1,7 +1,7 @@
 ---
 title: "RSI & Keyboards"
 description: "An overview of all the keyboards I've used over the years in an attempt to help my RSI."
-date: "2015-04-23"
+date: "2015-04-22"
 heroImage: "/assets/2015-04-23_rsi-keyboards/kinesis_freestyle_2_with_ascent.jpg"
 heroImageAlt: "Kinesis Freestyle 2 keyboard in vertical position using the Ascent stand"
 ---

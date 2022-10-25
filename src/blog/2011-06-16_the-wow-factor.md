@@ -1,7 +1,7 @@
 ---
 title: "The Wow Factor"
 description: "Brief thoughts on Perl, Rails, and \"the wow factor.\""
-date: "2011-06-17"
+date: "2011-06-16"
 tags: 
   - "perl"
   - "rails"

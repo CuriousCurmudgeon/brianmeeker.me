@@ -1,7 +1,7 @@
 ---
 title: "Startup Founders & Risk"
 description: "The importance of equalizing risk amongst startup founders."
-date: "2015-01-20"
+date: "2015-01-19"
 ---
 
 Real Life Sciences (RLS) failed for many reasons. The tech team consisted of me and one of the co-founders. (And for the first few months it was just me.) The tool we built was functional, but not spectacular. We used a lot of tech we weren't familiar with, which slowed progress. The team was distributed across four cities, and none of us had experience working remotely. Consequently, communication was poor. The only funding came from a family member of one of the co-founders.
