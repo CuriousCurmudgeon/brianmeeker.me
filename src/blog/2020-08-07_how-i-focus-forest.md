@@ -2,7 +2,7 @@
 title: "How I Focus: Forest"
 date: "2020-08-07"
 description: "I have worked remotely from home as consultant for over eight years now. Keeping focus during work is a constant struggle for me. I'm endlessly inventive in coming up with new ways to distract myself from doing work when I don't want to. One tool I use to combat this is Forest, a distraction blocking app for your phone."
-heroImage: "/assets/2020-08-08_how-i-focus-forest/forest_icon_circle.png"
+heroImage: "/assets/2020-08-07_how-i-focus-forest/forest_icon_circle.png"
 heroImageAlt: "Forest app icon. A tree is germinating out of soil"
 tags: 
   - "focus"
@@ -19,7 +19,7 @@ The app blocking used to have some serious issues on Android, but recent updates
 
 ## Pretty Little Trees
 
-![Screenshot of weekly progress in Forest app](/assets/2020-08-08_how-i-focus-forest/weekly_forest_screenshot.png)
+![Screenshot of weekly progress in Forest app](/assets/2020-08-07_how-i-focus-forest/weekly_forest_screenshot.png)
 
 My kids love how Forest gamifies staying off my phone by encouraging me to plant adorable trees. For every 30 minutes you stay off your phone with a timer running you get a new tree. They love to see what I've grown recently and even encourage me to grow more trees. That's a win-win for them. They get to see more pretty trees on my phone and I'm not distracted, helping me be a more attentive father.
 

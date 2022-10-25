@@ -2,7 +2,7 @@
 title: "Games::Tetravex"
 description: "Experimentation with building Tetravex in Perl using SDL and Moose."
 date: "2011-04-04"
-heroImage: "/assets/2011-04-05_gamestetravex/tetravex.png"
+heroImage: "/assets/2011-04-04_gamestetravex/tetravex.png"
 heroImageAlt: "Demo of clicking square tiles to flip them over with a nice animation"
 tags: 
   - "perl"
