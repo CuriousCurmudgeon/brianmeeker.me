@@ -1,7 +1,7 @@
 ---
 title: "Using validateStatus in Axios"
 description: "This past week I was working with an API endpoint where a 404 response is expected for invalid user input. I didn't want Axios to treat this as an error"
-date: "2022-03-05"
+date: "2022-03-04"
 tags: 
   - "axios"
   - "javascript"
