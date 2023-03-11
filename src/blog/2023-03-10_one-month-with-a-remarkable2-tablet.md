@@ -6,7 +6,7 @@ tags:
   - "remarkable"
 ---
 
-I had been tempted by the reMarkable tablet for years now. I had gotten so far as to have it in my cart multiple times only to pull back because of uncertainty How much would I actually use it? Did I want to spend that much money on a niche e-ink tablet? 
+I had been tempted by the [reMarkable tablet](https://remarkable.com/) for years now. I had gotten so far as to have it in my cart multiple times only to pull back because of uncertainty How much would I actually use it? Did I want to spend that much money on a niche e-ink tablet? 
 
 That was until I finally got to see one in person at CodeMash in January. In one of the first sessions of the day, I noticed that the woman next to me was writing on an e-ink table. Was that what I thought it was? Trying not to be too nosy, I kept glancing over throughout the talk to see how she was using it. There didn't appear to be any lag and she wasn't distracted by a laptop like I was. And her notes were gorgeous. I was very jealous.
 
