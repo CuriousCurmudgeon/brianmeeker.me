@@ -12,3 +12,11 @@ _Believe it or not, there was a time before Git. Even longer ago, there was a ti
 
 Recording: [CodeMash 2020](https://www.pluralsight.com/courses/codemash-session-96)  
 Slides: [GitHub](https://github.com/CuriousCurmudgeon/history_of_vcs/blob/master/history_of_vcs.pptx)
+
+## Taming Personal Knowledge Management with Obsidian and Dataview
+
+_Obsidian allows you to take notes entirely in Markdown. Dataview lets you query metadata in those notes. Come learn how you can use them to track your life for fun and (no) profit!_
+
+Demo Vault: [GitHub](https://github.com/CuriousCurmudgeon/obsidian_demo_vault)
+
+<iframe width="704" height="396" src="https://www.youtube.com/embed/XKZw2YLhFy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
