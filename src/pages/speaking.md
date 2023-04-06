@@ -20,3 +20,11 @@ _Obsidian allows you to take notes entirely in Markdown. Dataview lets you query
 Demo Vault: [GitHub](https://github.com/CuriousCurmudgeon/obsidian_demo_vault)
 
 <iframe width="704" height="396" src="https://www.youtube.com/embed/XKZw2YLhFy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## It's a Live(View): Discover the Elixir of Life With a Virtual Pet
+
+_Are you tired of writing JavaScript? Are you only using Node to avoid context shifting between languages? Good news! In recent years there has been an explosion in developer options for creating rich, real-time browser-based apps with little to no JavaScript!_
+
+_This session will give a brief overview of Elixir and then create a virtual pet app using Phoenix LiveView. You'll leave the session knowing the pros and cons of this model vs. traditional JavaScript frameworks and a virtual pet who will provide you with unconditional love until you forget to feed it for too long._
+
+[Scheduled for THAT Conference WI 2023](https://that.us/activities/2P8aHDB0t3hnZBOiTVkw)
