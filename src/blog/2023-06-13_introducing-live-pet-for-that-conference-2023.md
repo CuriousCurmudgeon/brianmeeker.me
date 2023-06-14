@@ -1,6 +1,6 @@
 ---
 title: "Introducing LivePet for THAT Conference 2023"
-description: "Upgrading to OTP 26 without also upgrading Ecto to >= 3.9.5 causes compilation errors"
+description: "Why have one virtual pet when you could have 120K? LivePet is a new Elixir and LiveView demo app for my talk at THAT Conference 2023."
 date: "2023-06-13"
 tags:
   - "elixir"
