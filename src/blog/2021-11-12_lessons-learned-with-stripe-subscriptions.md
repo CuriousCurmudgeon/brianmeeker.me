@@ -27,7 +27,7 @@ Stripe subscriptions involve, at minimum, the following resources
 - Invoices
 - Invoice items
 
-Subscriptions have many invoice items. Invoices are generated from subscriptions and contain many invoice items. An invoice can be thought of as a snapshot of the subscription at a point in time. The contents of the subscription will change over time, but past invoices will not. When an invoice is created, you will have a brief window of one hour to modify it before it gets finalized.
+Subscriptions have many subscription items. Invoices are generated from subscriptions and contain many invoice items. An invoice can be thought of as a snapshot of the subscription at a point in time. The contents of the subscription will change over time, but past invoices will not. When an invoice is created, you will have a brief window of one hour to modify it before it gets finalized.
 
 Luckily, the Stripe documentation is often excellent. You'll do yourself a huge favor by carefully reading their [guide to how subscriptions work](https://stripe.com/docs/billing/subscriptions/overview) multiple times. The rest of this post is going to assume that you have made yourself moderately familiar with the basics of how subscriptions work in Stripe.
 
@@ -35,7 +35,7 @@ That being said...
 
 # How Are You Going to Sync With Your System?
 
-Stripe provides an [extensive set of events](https://stripe.com/docs/api/events/types) that you can subscribe to through [webhooks](https://stripe.com/docs/billing/subscriptions/webhooks). Deciding what webhooks you need to care about is important. At a minimum, you need to care about the `[invoice.paid](https://stripe.com/docs/api/events/types#event_types-invoice.paid)` event. This covers the happy path of your customer choosing a subscription plan and checking out. After their card (or other payment method) is successfully charged, you will receive the `invoice.paid` event. You handle this event to activate their subscription in your system.
+Stripe provides an [extensive set of events](https://stripe.com/docs/api/events/types) that you can subscribe to through [webhooks](https://stripe.com/docs/billing/subscriptions/webhooks). Deciding what webhooks you need to care about is important. At a minimum, you need to care about the [invoice.paid](https://stripe.com/docs/api/events/types#event_types-invoice.paid) event. This covers the happy path of your customer choosing a subscription plan and checking out. After their card (or other payment method) is successfully charged, you will receive the `invoice.paid` event. You handle this event to activate their subscription in your system.
 
 But what do you do with the rest of the information from that event? Do you toss it aside? Persist it somewhere? As with just about anything in software engineering, it depends.
 
@@ -65,7 +65,7 @@ Solving this is actually what I'm working on now, so I don't have a full solutio
 
 # Do You Want To Remind Users of Renewal?
 
-Thankfully, this one is a bit easier to handle. In your [account billing settings](https://dashboard.stripe.com/settings/billing/automatic), you can set the number of days in advance to send an `[invoice.upcoming](https://stripe.com/docs/api/events/types#event_types-invoice.upcoming)` event. You will need to handle this webhook event and remind your users in whatever way is appropriate for your app.
+Thankfully, this one is a bit easier to handle. In your [account billing settings](https://dashboard.stripe.com/settings/billing/automatic), you can set the number of days in advance to send an [invoice.upcoming](https://stripe.com/docs/api/events/types#event_types-invoice.upcoming) event. You will need to handle this webhook event and remind your users in whatever way is appropriate for your app.
 
 ![Stripe renewal event settings screenshot](https://brianmeekerme.files.wordpress.com/2021/11/stripe_upcoming_renwal_setting.png?w=1024)
 
@@ -79,15 +79,15 @@ Stripe supports up to five tax rates per line item, so go nuts. Chances are Stri
 
 # Are You Going To Sync Up Subscription Renewal Dates?
 
-Another issue we're dealing with is if we should sync up subscription renewal dates. Let's say that you purchase a subscription for one insurance product on the 3rd of the month. Then you purchase another one two weeks later on the 17th. Should these subscriptions be treated independently or not? In our case, we haven't definitively answered this question. There is a tension between the simplicity of a single subscription vs. most insurance being sold with annual subscriptions. Should the second subscription be independent or sync up with first? Or should it be dependent of if the insurance is for the same property? Your business may have similar questions.
+Another issue we're dealing with is if we should sync up subscription renewal dates. Let's say that you purchase a subscription for one insurance product on the 3rd of the month. Then you purchase another one two weeks later on the 17th. Should these subscriptions be treated independently or not? In our case, we haven't definitively answered this question. There is a tension between the simplicity of a single subscription vs. most insurance being sold with annual subscriptions. Should the second subscription be independent or sync up with first? Or should it depend on if the insurance is for the same property? Your business may have similar questions.
 
 If you decide to sync up to existing subscriptions, then you get into [proration](https://stripe.com/docs/billing/subscriptions/prorations). Luckily, this is another thing that Stripe had good support for, but it's yet another detail you will need to handle properly.
 
 # How Do You Handle Renewal Failures?
 
-I haven't implemented this yet. That's a problem for future Brian when subscriptions start to renew. However, it is something on my mind. Once again, Stripe will send you an event when this happens, `[invoice.payment_failed](https://stripe.com/docs/api/events/types#event_types-invoice.payment_failed)` in this case. Handle the event and prod your user to update their payment method.
+I haven't implemented this yet. That's a problem for future Brian when subscriptions start to renew. However, it is something on my mind. Once again, Stripe will send you an event when this happens, [invoice.payment_failed](https://stripe.com/docs/api/events/types#event_types-invoice.payment_failed) in this case. Handle the event and prod your user to update their payment method.
 
-Of course, that opens another issue. If you've been handling trials or subscriptions that start in the future, chances are that you already have a way for users to enter payment methods. In this case, they probably need to update their payment method. If you haven't care about this yet, you need to now.
+Of course, that opens another issue. If you've been handling trials or subscriptions that start in the future, chances are that you already have a way for users to enter payment methods. In this case, they probably need to update their payment method. If you haven't had to care about this yet, you need to now.
 
 # Summary
 
