@@ -44,3 +44,14 @@ _In this session, we'll go over a case study of our new concurrent, multi-stage 
 - [ElixirConf 2024](https://2024.elixirconf.com/schedule/messaging-with-limits-concurrent-multi-stage-data-processing-in-the-real-world)
 
 <iframe width="704" height="396" src="https://www.youtube.com/embed/S82oyR4fzsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="704" height="396" src="https://www.youtube.com/embed/_wT_49Btr5Q?si=BaIqK_ozitZGQh_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## SPAs Without Javascript: Simplify Your Stack
+
+_Are you tired of writing JavaScript? Are you only using Node to avoid context shifting between languages? Good news! In recent years there has been an explosion in developer options for creating rich, real-time, browser-based apps with little-to-no JavaScript!_
+
+_This session will give a brief overview of these options and dive deep into an app built with one of them. You'll leave the session knowing the pros and cons of this new model vs. traditional JavaScript frameworks and a virtual pet who will provide you with unconditional love until you forget to feed it for too long._
+
+- [GitHub](https://github.com/CuriousCurmudgeon/spas_without_js_talk)
+- [CodeMash 2025](https://codemash.org/session-details/?id=740792)
