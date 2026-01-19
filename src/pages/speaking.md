@@ -55,3 +55,21 @@ _This session will give a brief overview of these options and dive deep into an 
 
 - [GitHub](https://github.com/CuriousCurmudgeon/spas_without_js_talk)
 - [CodeMash 2025](https://codemash.org/session-details/?id=740792)
+
+## Refurbish Your Creaky Test Suite
+
+_It's not just you. Many of us work with increasingly creaky test suites on a daily basis. Why do some tests fail intermittently? Can this test be async? Do I need to care about my test suite being async at all? Don't just shrug your shoulders and tag it as flaky! Your test suite can be refurbished!_
+
+_In this talk, you'll learn how to improve your legacy test suite through the lens of an 8+ year old production test suite that has made just about every mistake you can think of. You'll learn techniques for setting up realistic looking test data, managing shared state, and how to make your code more testable to begin with. You'll leave with actionable steps you can take to refurbish your own test suite._
+
+This was accepted to ElixirConf US 2025 as a backup talk, but they ended up not needing a backup. I've given it at the Ohio Elixir Meetup since then. It's future is currently in limbo as I figure out if it needs retooled.
+
+- [GitHub](https://github.com/CuriousCurmudgeon/refurbish_test_suite_talk)
+
+## Unionization, AI, and You
+_Software engineers have for decades taken for granted that demand for our services will only go up, as will our salaries. We may not have had great job security in any one job, but there was always another one (and a pay raise) around the corner. In our current generative AI world, it is no longer safe to take that for granted._
+
+_In this talk, we'll learn about unionization efforts across the tech industry. We'll talk about the realities of unions, both the good and the bad. You'll leave with an understanding of the various steps in forming a union, all the way from recognition to ratification and beyond. And, who knows, maybe you'll get to negotiate a contract with an AI when it replaces the C-suite at your employer._
+
+- [GitHub](https://github.com/CuriousCurmudgeon/unionization_ai_and_you_talk)
+- [CodeMash 2026](https://events.codemash.org/2026CodeMashConference#/agenda?day=3&lang=en&sessionId=76186000008389260&viewMode=2)
