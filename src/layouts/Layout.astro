@@ -5,7 +5,7 @@ export interface Props {
   title: string;
 }
 
-const { title } = Astro.props.frontmatter || Astro.props;
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ const { title } = Astro.props.frontmatter || Astro.props;
     </footer>
 
     <!-- 100% privacy friendly analytics -->
-    <script async defer src="https://sa.brianmeeker.me/latest.js"></script>
+    <script is:inline async defer src="https://sa.brianmeeker.me/latest.js"></script>
     <noscript
       ><img
         src="https://sa.brianmeeker.me/noscript.gif"
