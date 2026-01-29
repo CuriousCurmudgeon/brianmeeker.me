@@ -1,30 +1,23 @@
 import rss from '@astrojs/rss';
+import { getCollection } from 'astro:content';
 import { buildUrl } from "../utilities/urlBuilder";
 
-const postImportResult = import.meta.glob('../blog/**/*.md', { eager: true });
-const posts = Object.values(postImportResult)
-  .sort(
+export async function GET(context) {
+  const posts = (await getCollection('blog')).sort(
     (a, b) =>
-      new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
+      new Date(b.data.date).valueOf() -
+      new Date(a.data.date).valueOf()
   );
 
-export const get = () => rss({
-  // `<title>` field in output xml
-  title: 'Brian Meeker',
-  // `<description>` field in output xml
-  description: 'Yet Another Developer Blog',
-  // base URL for RSS <item> links
-  // SITE will use "site" from your project's astro.config.
-  site: import.meta.env.SITE,
-  // list of `<item>`s in output xml
-  // simple example: generate items for every md file in /src/pages
-  // see "Generating items" section for required frontmatter and advanced use cases
-  items: posts.map((post) => ({
-    link: buildUrl(post),
-    title: post.frontmatter.title,
-    pubDate: post.frontmatter.date,
-  })),
-  // (optional) inject custom xml
-  customData: `<language>en-us</language>`,
-});
+  return rss({
+    title: 'Brian Meeker',
+    description: 'Yet Another Developer Blog',
+    site: context.site,
+    items: posts.map((post) => ({
+      link: buildUrl(post),
+      title: post.data.title,
+      pubDate: new Date(post.data.date),
+    })),
+    customData: `<language>en-us</language>`,
+  });
+}

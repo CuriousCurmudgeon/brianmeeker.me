@@ -1,9 +1,5 @@
-import type { MarkdownInstance } from "astro";
+import type { CollectionEntry } from 'astro:content';
 import { DateTime } from "luxon";
-
-interface Frontmatter {
-  date: string;
-}
 
 interface UrlParts {
   slug: string;
@@ -12,18 +8,22 @@ interface UrlParts {
   day: string;
 }
 
-function buildUrlParts(post: MarkdownInstance<Frontmatter>): UrlParts {
-  const dateTime = DateTime.fromISO(post.frontmatter.date);
-  const filename = post.file.split("/").pop()!.split("_").pop()!;
+function buildUrlParts(post: CollectionEntry<'blog'>): UrlParts {
+  const dateTime = DateTime.fromISO(post.data.date);
+
+  // Extract slug from ID: "2025-01-26_slug-name.md" -> "slug-name"
+  const filename = post.id.replace('.md', '');
+  const slug = filename.split('_').pop()!;
+
   return {
-    slug: filename.split(".").shift()!,
+    slug,
     year: dateTime.toFormat("yyyy"),
     month: dateTime.toFormat("MM"),
     day: dateTime.toFormat("dd")
   }
 }
 
-function buildUrl(post: MarkdownInstance<Frontmatter>): string {
+function buildUrl(post: CollectionEntry<'blog'>): string {
   const { slug, year, month, day } = buildUrlParts(post);
   return `/${year}/${month}/${day}/${slug}`;
 }

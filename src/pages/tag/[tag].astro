@@ -1,32 +1,27 @@
 ---
 import _ from "lodash";
 import PostPreviewList from "../../components/PostPreviewList.astro";
-
-interface Frontmatter {
-  title: string;
-  date: string;
-  tags: string[];
-  currentTag: string[];
-}
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = (await Astro.glob<Frontmatter>("../../blog/*.md"))
-    .filter((post) => post.frontmatter.tags)
+  const allPosts = await getCollection('blog');
+  const posts = allPosts
+    .filter((post) => post.data.tags)
     .flatMap((post) => {
-      return post.frontmatter.tags.map((tag) => {
+      return post.data.tags!.map((tag) => {
         return {
           ...post,
-          frontmatter: { ...post.frontmatter, currentTag: [tag] },
+          data: { ...post.data, currentTag: [tag] },
         };
       });
     });
-  const tagGroups = _.groupBy(posts, (post) => post.frontmatter.currentTag);
+  const tagGroups = _.groupBy(posts, (post) => post.data.currentTag);
 
   return _.map(tagGroups, (posts, tag) => {
     const sortedPosts = posts.sort(
       (a, b) =>
-        new Date(b.frontmatter.date).valueOf() -
-        new Date(a.frontmatter.date).valueOf()
+        new Date(b.data.date).valueOf() -
+        new Date(a.data.date).valueOf()
     );
     return {
       params: {

@@ -1,29 +1,24 @@
 ---
 import _ from "lodash";
 import PostPreviewList from "../components/PostPreviewList.astro";
-
-interface Frontmatter {
-  date: string;
-  year: string;
-}
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = (await Astro.glob<Frontmatter>("../blog/*.md")).map(
-    (post) => {
-      const year = new Date(post.frontmatter.date).getFullYear();
-      return {
-        ...post,
-        frontmatter: { ...post.frontmatter, year: year },
-      };
-    }
-  );
-  const yearGroups = _.groupBy(posts, (post) => post.frontmatter.year);
+  const allPosts = await getCollection('blog');
+  const posts = allPosts.map((post) => {
+    const year = new Date(post.data.date).getFullYear();
+    return {
+      ...post,
+      data: { ...post.data, year: year },
+    };
+  });
+  const yearGroups = _.groupBy(posts, (post) => post.data.year);
 
   return _.map(yearGroups, (posts, year) => {
     const sortedPosts = posts.sort(
       (a, b) =>
-        new Date(b.frontmatter.date).valueOf() -
-        new Date(a.frontmatter.date).valueOf()
+        new Date(b.data.date).valueOf() -
+        new Date(a.data.date).valueOf()
     );
     return {
       params: {

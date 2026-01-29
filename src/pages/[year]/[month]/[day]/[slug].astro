@@ -2,18 +2,14 @@
 import ProseLayout from "../../../../layouts/ProseLayout.astro";
 import TagLink from "../../../../components/TagLink.astro";
 import { buildUrlParts } from "../../../../utilities/urlBuilder";
-
-interface Frontmatter {
-  title: string;
-  date: string;
-}
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = (await Astro.glob<Frontmatter>("../../../../blog/*.md"))
+  const posts = (await getCollection('blog'))
     .sort(
       (a, b) =>
-        new Date(b.frontmatter.date).valueOf() -
-        new Date(a.frontmatter.date).valueOf()
+        new Date(b.data.date).valueOf() -
+        new Date(a.data.date).valueOf()
     )
     .map((post) => {
       return {
@@ -32,9 +28,9 @@ export async function getStaticPaths() {
   }));
 }
 
-const { Content } = Astro.props.post;
-const { title, date, heroImage, heroImageAlt, tags } =
-  Astro.props.post.frontmatter;
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, date, heroImage, heroImageAlt, tags } = post.data;
 ---
 
 <ProseLayout title={title}>
