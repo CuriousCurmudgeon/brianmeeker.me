@@ -2,7 +2,7 @@
 title: "How I Focus: Cold Turkey"
 description: "How I use Cold Turkey to give me the power to fight against my tendency to fall down the internet rabbit hole and not actually get anything done."
 date: "2020-08-19"
-heroImage: "/assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_logo.png"
+heroImage: "../../assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_logo.png"
 heroImageAlt: "Logo for the Cold Turkey distraction blocking app"
 tags: 
   - "cold-turkey"
@@ -13,11 +13,11 @@ In my [last post](https://brianmeeker.me/2020/08/07/how-i-focus-forest/) I talke
 
 ## What Is It?
 
-- ![Screenshot of my Cold Turkey blocking schedule](/assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_block_schedule.png)
+- ![Screenshot of my Cold Turkey blocking schedule](../../assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_block_schedule.png)
     
-- ![Screenshot of list of websites blocked by Cold Turkey](/assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_website_list.png)
+- ![Screenshot of list of websites blocked by Cold Turkey](../../assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_website_list.png)
     
-- ![Screenshot of list of applications blocked by Cold Turkey](/assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_applications_list.png)
+- ![Screenshot of list of applications blocked by Cold Turkey](../../assets/2020-08-19_how-i-focus-cold-turkey/cold_turkey_applications_list.png)
     
 
 Cold Turkey is a distraction blocking tool. It gives me the power to fight against my tendency to fall down the internet rabbit hole and not actually get anything done. My capacity to get lost in Wikipedia (or YouTube (or Twitter)) is boundless. Cold Turkey prevents those tangents from even happening.
@@ -40,7 +40,7 @@ I'm not limited to just the scheduled blocks though. I can also turn on a block 
 
 ## Wait! It Costs Money?
 
-![Fry from Futurama telling someone to "shut up and take my money"](/assets/2020-08-19_how-i-focus-cold-turkey/shut_up_and_take_my_money.jpg)
+![Fry from Futurama telling someone to "shut up and take my money"](../../assets/2020-08-19_how-i-focus-cold-turkey/shut_up_and_take_my_money.jpg)
 
 Yes. I'm a software developer and I believe that other software developers should be paid for their work. It takes time and effort to make a tool like this work reliably across operating systems as those systems change. Don't be shy about paying for software that is valuable to you.
 

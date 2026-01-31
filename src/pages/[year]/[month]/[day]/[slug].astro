@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import ProseLayout from "../../../../layouts/ProseLayout.astro";
 import TagLink from "../../../../components/TagLink.astro";
 import { buildUrlParts } from "../../../../utilities/urlBuilder";
@@ -40,10 +41,12 @@ const { title, date, heroImage, heroImageAlt, tags } = post.data;
     <section class="mb-8 text-center">
       {
         heroImage && (
-          <img
+          <Image
             class="object-cover mx-auto"
             src={heroImage}
-            alt={heroImageAlt}
+            alt={heroImageAlt || ''}
+            widths={[480, 800, 1200]}
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 1200px"
           />
         )
       }

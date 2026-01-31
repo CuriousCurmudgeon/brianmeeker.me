@@ -15,7 +15,7 @@ LivePet is a demo app to show off aspects of [Elixir](https://elixir-lang.org/),
 
 Most of the work up until now has been in leveling up my OTP skills to simulate 100K+ pets at once. That was an arbitrary goal that I set for myself as a cool way to demonstrate the power of the BEAM. This past weekend, I was able to get an alpha version of it running 120K pets. It's nothing you would ever want to throw into production, but it works to illustrate the power of Elixir.
 
-![Screenshot of a Phoenix LiveDashboard showing 120K processes running and using over 3GB of memory to do so.](/assets/2023-06-13_introducing-live-pet-for-that-conference-2023/120_000_pets.png)
+![Screenshot of a Phoenix LiveDashboard showing 120K processes running and using over 3GB of memory to do so.](../../assets/2023-06-13_introducing-live-pet-for-that-conference-2023/120_000_pets.png)
 
 # Current Architecture
 On startup, the app starts a supervisor that will start up every pet and a [`Registry`](https://hexdocs.pm/elixir/1.14/Registry.html) for what processes are currently viewing a pet. Pets run under a [`PartitionSupervisor`](https://hexdocs.pm/elixir/1.14/PartitionSupervisor.html) that starts up [`DynamicSupervisors`](https://hexdocs.pm/elixir/1.14/DynamicSupervisor.html). `DynamicSupervisors` cannot be given a list of children on startup, so a separate task is started to start all the pet processes.

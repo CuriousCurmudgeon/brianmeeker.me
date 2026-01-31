@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import TagLink from "../components/TagLink.astro";
 import { buildUrl } from "../utilities/urlBuilder";
 
@@ -14,7 +15,13 @@ const url = buildUrl(Astro.props.post);
   {
     heroImage && (
       <a href={url}>
-        <img src={heroImage} alt={heroImageAlt} class="mx-auto" />
+        <Image
+          src={heroImage}
+          alt={heroImageAlt || ''}
+          class="mx-auto"
+          widths={[320, 640, 800]}
+          sizes="(max-width: 640px) 320px, (max-width: 1024px) 640px, 800px"
+        />
       </a>
     )
   }

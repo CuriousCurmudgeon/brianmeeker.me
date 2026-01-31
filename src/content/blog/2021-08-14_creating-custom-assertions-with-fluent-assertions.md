@@ -2,7 +2,7 @@
 title: "Creating Custom Assertions With Fluent.Assertions"
 description: "Exploring creating custom assertions with Fluent.Assertions for the first time."
 date: "2021-08-14"
-heroImage: "/assets/2021-08-14_creating-custom-assertions-with-fluent-assertions/fluent_assertions_large_horizontal_logo.png"
+heroImage: "../../assets/2021-08-14_creating-custom-assertions-with-fluent-assertions/fluent_assertions_large_horizontal_logo.png"
 heroImageAlt: "Logo for the Fluent.Assertions library"
 tags: 
   - "c-sharp"

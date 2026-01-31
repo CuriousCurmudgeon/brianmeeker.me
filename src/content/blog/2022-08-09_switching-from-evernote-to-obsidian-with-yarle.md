@@ -2,7 +2,7 @@
 title: "Switching From Evernote To Obsidian With Yarle"
 description: "How I exported 5,408 notes from Evernote and converted them into Markdown for Obsidian"
 date: "2022-08-09"
-heroImage: "/assets/2022-08-09_switching-from-evernote-to-obsidian-with-yarle/obsidian_logo.png"
+heroImage: "../../assets/2022-08-09_switching-from-evernote-to-obsidian-with-yarle/obsidian_logo.png"
 heroImageAlt: "Logo for Obsidian"
 tags: 
   - "evernote"
@@ -31,7 +31,7 @@ It didn't take me long to stumble across [Yarle](https://github.com/akosbalasko/
 
 First, I [exported a single notebook from Evernote](https://help.evernote.com/hc/en-us/articles/209005557-Export-notes-and-notebooks-as-ENEX-or-HTML) by right-clicking on it and selecting _Export notebook…_.
 
-![Context menu in Evernote showing how to export a notebook](/assets/2022-08-09_switching-from-evernote-to-obsidian-with-yarle/evernote_export_screenshot.png)
+![Context menu in Evernote showing how to export a notebook](../../assets/2022-08-09_switching-from-evernote-to-obsidian-with-yarle/evernote_export_screenshot.png)
 
 I kept the defaults and exported as `.enex`. This exported the entire notebook in one file. Opening this file up in my text editor of choice, revealed that it was a very simple XML file. The content of each note is HTML that Yarle is going to convert to Markdown.
 

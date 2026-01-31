@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   const posts = allPosts
     .filter((post) => post.data.tags)
     .flatMap((post) => {
-      return post.data.tags!.map((tag) => {
+      return post.data.tags!.map((tag: string) => {
         return {
           ...post,
           data: { ...post.data, currentTag: [tag] },

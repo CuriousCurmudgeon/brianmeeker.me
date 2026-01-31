@@ -2,7 +2,7 @@
 title: "Ownership and Intention"
 description: "tl;dr: I'm joining Husmus as their Director of Engineering."
 date: "2021-06-18"
-heroImage: "/assets/2021-06-18_ownership-and-intention/husmus_logo_large.png"
+heroImage: "../../assets/2021-06-18_ownership-and-intention/husmus_logo_large.png"
 heroImageAlt: "Husmus logo"
 tags: 
   - "husmus"

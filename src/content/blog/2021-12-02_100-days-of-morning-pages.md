@@ -2,7 +2,7 @@
 title: "100 Days of Morning Pages"
 description: "Thoughts on my experiment with morning pages, both longhand and typed."
 date: "2021-12-02"
-heroImage: "/assets/2021-12-02_100-days-of-morning-pages/open_blank_notebook.jpeg"
+heroImage: "../../assets/2021-12-02_100-days-of-morning-pages/open_blank_notebook.jpeg"
 heroImageAlt: "A notebook open to blank pages on a wooden table with a pen sitting on top"
 tags: 
   - "writing"

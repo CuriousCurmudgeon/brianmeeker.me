@@ -1,7 +1,7 @@
 ---
 title: "From Punch Cards to Git: A Brief History of Version Control"
 date: "2020-08-02"
-heroImage: "/assets/2020-08-02_from-punch-cards-to-git-a-brief-history-of-version-control/punched_card_program_deck.jpg"
+heroImage: "../../assets/2020-08-02_from-punch-cards-to-git-a-brief-history-of-version-control/punched_card_program_deck.jpg"
 heroImageAlt: "Stack of punch cards held together with a rubber band and marked with a diagonal red line for sorting"
 tags: 
   - "speaking"
@@ -11,7 +11,7 @@ tags:
 
 Way back in the before times, in the halcyon days of January 2020, I gave my first conference talk at CodeMash. I had spoken publicly at a local user group I used to run, but had never given a professional talk to a crowd of strangers.
 
-![Brian Meeker gesturing at a slide from behind a lectern while presenting at CodeMash 2020](/assets/2020-08-02_from-punch-cards-to-git-a-brief-history-of-version-control/brian_meeker_presenting.jpg)
+![Brian Meeker gesturing at a slide from behind a lectern while presenting at CodeMash 2020](../../assets/2020-08-02_from-punch-cards-to-git-a-brief-history-of-version-control/brian_meeker_presenting.jpg)
 
 I had hoped to give this talk at other conferences this year, but... well, things happened. Luckily this talk was recorded and is available at [Pluralsight](https://www.pluralsight.com/courses/codemash-session-96). The slides are also available on [GitHub](https://github.com/CuriousCurmudgeon/history_of_vcs/blob/master/history_of_vcs.pptx). Further good news is that the talk is evergreen, so when conferences start up again in 2022, I won't be stuck with a talk that is four versions behind whatever tech stack I was talking about.
 

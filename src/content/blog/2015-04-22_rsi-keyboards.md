@@ -2,7 +2,7 @@
 title: "RSI & Keyboards"
 description: "An overview of all the keyboards I've used over the years in an attempt to help my RSI."
 date: "2015-04-22"
-heroImage: "/assets/2015-04-22_rsi-keyboards/kinesis_freestyle_2_with_ascent.jpg"
+heroImage: "../../assets/2015-04-22_rsi-keyboards/kinesis_freestyle_2_with_ascent.jpg"
 heroImageAlt: "Kinesis Freestyle 2 keyboard in vertical position using the Ascent stand"
 ---
 
@@ -12,13 +12,13 @@ I've since gotten more than 90% better through drastic diet changes, but until I
 
 ## Microsoft Natural MultiMedia
 
-## ![Well-used Microsoft Natural MultiMedia keyboard](/assets/2015-04-22_rsi-keyboards/microsoft_natural_multimedia.jpg)
+## ![Well-used Microsoft Natural MultiMedia keyboard](../../assets/2015-04-22_rsi-keyboards/microsoft_natural_multimedia.jpg)
 
 Let's be clear, the [Microsoft Natural MultiMedia](http://en.wikipedia.org/wiki/Microsoft_Natural_keyboard) is trash if you are suffering from serious RSI, but it (or something similar) is what many people start with. It's about the only "ergonomic" option you can find in brick-and-mortar stores. I got one in college (sometime in the 2004-2005 range) and had good results initially. That is a pattern with many ergonomic devices. It isn't so much that the device is ergonomic; it's that you are exercising different tendons/ligaments/muscles around the strain. Different angles and positions stress different ligaments and tendons, so your injuries get some much needed relief. Unfortunately, for many people the underlying cause isn't being treated and they eventually develop similar problems with the new keyboard.
 
 ## Kinesis Advantage Pro
 
-![Well-used Kinesis Advantage Pro keyboard](/assets/2015-04-22_rsi-keyboards/kinesis_advantage_pro.jpg)
+![Well-used Kinesis Advantage Pro keyboard](../../assets/2015-04-22_rsi-keyboards/kinesis_advantage_pro.jpg)
 
 I graduated from college in 2007 and my RSI quickly got worse with a 40 hour work week. The Microsoft Natural MultiMedia just wasn't cutting it anymore, so I swallowed hard and spent $260 on a [Kinesis Advantage Pro](https://www.kinesis-ergo.com/shop/advantage-pro-for-pc-mac/).
 
@@ -30,7 +30,7 @@ At some point (maybe in 2008?) I switched to Dvorak. I'm not sure if this really
 
 ## Kinesis Freestyle Ascent
 
-![Kinesis Freestyle Ascent keyboard](/assets/2015-04-22_rsi-keyboards/kinesis_freestyle_2_with_ascent.jpg)
+![Kinesis Freestyle Ascent keyboard](../../assets/2015-04-22_rsi-keyboards/kinesis_freestyle_2_with_ascent.jpg)
 
 I used the Kinesis Advantage Pro until sometime in 2011 when my RSI started getting worse. It just wasn't cutting it anymore. At that point, after years of toying the idea, I bit the bullet and went vertical with a [Kinesis Freestyle 2](https://www.kinesis-ergo.com/shop/freestyle2-for-pc-us/). (The 20" cable between the sections is necessary if you want to go vertical.)
 
@@ -40,7 +40,7 @@ The Freestyle itself is far inferior to the Advantage Pro, but I can't use the A
 
 But going vertical made it all worth it. Being able to type with your hands still in a neutral handshake position is amazing and I doubt any horizontal keyboard will ever be able to compete with vertical (at least in my case).
 
-![DIY Kinesis Freestyle Ascent keyboard](/assets/2015-04-22_rsi-keyboards/kinesis_freestyle_2_with_diy_vertical_stand.jpg)
+![DIY Kinesis Freestyle Ascent keyboard](../../assets/2015-04-22_rsi-keyboards/kinesis_freestyle_2_with_diy_vertical_stand.jpg)
 
 The [Ascent](https://www.kinesis-ergo.com/shop/freestyle2-ascent-accessory/) is the vertical mount for the keyboard. It actually can be used at many different angles, but I've only used it at the full 90°.It is an extremely well made (and extremely over priced) adjustable steel stand that the Freestyle screws onto. But you don't actually need it. For the first couple of years I actually used a DIY stand from some scrap wood and attached the keyboard with velcro. I've since relented and actually bought the Ascent (it's much better for travel), but you don't actually need it.
 
