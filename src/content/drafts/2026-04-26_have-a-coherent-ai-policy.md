@@ -1,8 +1,8 @@
-My very first job out of college was at a law firm with hundreds of paralegals. They were running an in-house workflow system to manage foreclosure and bankruptcy cases. At the peak, we were doing over 100K of each a year.
+My very first job out of college was at a law firm with hundreds of paralegals. They were running an in-house workflow system to manage foreclosure and bankruptcy cases. I lucked into a boom industry when the housing bubble burst. At the peak, we were doing over 100K of each a year.
 
 The work was broken down into finely sliced tasks. Paralegals worked out of a queue of tasks, mostly of the same flavor. It was an assembly line for court filings; Taylorism brought to legal work.
 
-Before I started, a new executive had been brought in and one of her jobs was to streamline process. Her plan was simple. She was going to start by standing behind employees with a stopwatch and time out how long it took them to complete tasks. Then KPIs would be setup based on those measurements.
+Before I started, a new executive had been brought in. One of her jobs was to streamline process. Her plan was simple. She was going to stand behind employees with a stopwatch and time how long it took them to complete tasks. KPIs would be setup based on those measurements.
 
 This went as well as you would expect. People don't perform tasks the same way they normally do when an executive is standing behind them with a stopwatch. She quickly learned how worthless this was.
 
@@ -13,7 +13,7 @@ Tokenmaxxing is the latest fad to come out of management who still, in the Year 
 
 The idea is that the company will encourage the adoption of AI tools by creating a leaderboard of who is using the most tokens. Much like any other naive metric put in front of engineers, [it immediately gets gamed](https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/). Just create a loop that wastes tokens and shoot to the top of the leaderboard. Or waste just enough to show that you're "using" AI, but not enough to explain your usage.
 
-This is what passes for leadership apparently. Creating easily gamed metrics for your team that are quickly divorced from actually helping people. Because at the end of the day, that's what we're here for, right? That's what I'm here for. I'm here to help our customers accomplish their goals. I'm not here to use a certain number of tokens. Tokenmaxxing is a vanity metric masquerading as leadership.
+This is what passes for leadership apparently. Creating easily gamed metrics for your team that are quickly divorced from actually helping people. Because at the end of the day, that's what we're here for, right? You're here to help people, right? That's what I'm here for. I'm here to help our customers accomplish their goals. I'm not here to use a certain number of tokens. Tokenmaxxing is a vanity metric masquerading as leadership.
 
 # Why an AI Policy?
 I manage a team that is very skeptical of AI, and for good reason. I don't need to enumerate the ethical concerns here. There have been enough think pieces about that.
