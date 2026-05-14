@@ -1,3 +1,12 @@
+---
+title: "Have a Coherent AI Policy"
+description: "My engineering AI policy at GetThru and tokenmaxxing as a lack of leadership."
+date: "2026-05-14"
+tags:
+  - "leadership"
+  - "AI"
+---
+
 My very first job out of college was at a law firm with hundreds of paralegals. They were running an in-house workflow system to manage foreclosure and bankruptcy cases. I lucked into a boom industry when the housing bubble burst. At the peak, we were doing over 100K of each a year.
 
 The work was broken down into finely sliced tasks. Paralegals worked out of a queue of tasks, mostly of the same flavor. It was an assembly line for court filings; Taylorism brought to legal work.
