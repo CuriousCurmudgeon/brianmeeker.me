@@ -11,7 +11,7 @@ My very first job out of college was at a law firm with hundreds of paralegals. 
 
 The work was broken down into finely sliced tasks. Paralegals worked out of a queue of tasks, mostly of the same flavor. It was an assembly line for court filings; Taylorism brought to legal work.
 
-Before I started, a new executive had been brought in. One of her jobs was to streamline process. Her plan was simple. She was going to stand behind employees with a stopwatch and time how long it took them to complete tasks. KPIs would be set up based on those measurements.
+Before I started, a new executive had been brought in. One of her jobs was to streamline process. Her plan was simple: she was going to stand behind employees with a stopwatch and time how long it took them to complete tasks. KPIs would be set up based on those measurements.
 
 This went as well as you would expect. People don't perform tasks the same way they normally do when an executive is standing behind them with a stopwatch. She quickly learned how worthless this was.
 
@@ -53,7 +53,7 @@ There is an inherent contradiction in AI boosters.
 1. If you don't get on the AI train now, you're going to be left behind.
 2. AI is moving so fast that everything you know today will be worthless in six months.
 
-It cannot be true that I have to be an AI maximalist at this very moment and also that everything I know today will be worthless in six months. [Why can't I just wait](https://www.ufried.com/blog/not_left_behind/) until six months from now and use the better models and techniques? I won't have to unlearn techniques that only exist to work around the immaturity of current tooling then. (I'm looking at you Ralph Loops.)
+It cannot be true that I have to be an AI maximalist at this very moment and also that everything I know today will be worthless in six months. [Why can't I just wait](https://www.ufried.com/blog/not_left_behind/) until six months from now and use the better models and techniques? I won't have to unlearn techniques that only exist to work around the immaturity of current tooling then. (I'm looking at you, Ralph Loops.)
 
 We hire smart people and we trust them to do the job. I don't care what OS they use. I don't care what editor they use. I don't care what LSP they use. And I don't care what AI tooling they use. I don't care if they're dipping their toe in for a prototype or if they're running a full-blown Gas Town. I care that they're delivering for our customers.
 
@@ -70,7 +70,7 @@ AI maximalists will read this section and scoff. They're already vibe coding eve
 
 The AI maximalist bet is that models will improve at a rate that exceeds the tech debt they are accruing. This is similar to the bet that startups have made for years. It doesn't matter how bad the initial code is. The focus is on finding product-market fit and worrying about sustainability later. We have product-market fit though. We care about being able to work on this codebase for the next decade. Our customers care that our current features keep working.
 
-If you are AI maximalist, where is the bottleneck shifting too? Is it code review? Is it knowing what your customers even want? Is it the rate of change your customers can absorb? Being able to theoretically write 10x more code does not mean that you are providing 10x more value to your customers.
+If you are an AI maximalist, where is the bottleneck shifting to? Is it code review? Is it knowing what your customers even want? Is it the rate of change your customers can absorb? Being able to theoretically write 10x more code does not mean that you are providing 10x more value to your customers.
 
 If Claude goes down tomorrow, can you still do your job? Can you understand the code in front of you? If OpenAI goes bankrupt next week, will you gaze upon the horrors in your codebase and weep?
 
