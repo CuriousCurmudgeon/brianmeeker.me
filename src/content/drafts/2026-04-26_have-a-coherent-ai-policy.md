@@ -35,7 +35,7 @@ Let's go over these in more detail.
 # When To Use AI Tools
 > There is no mandate to use AI tools. You will not be reviewed based on how much you are using these tools.
 > 
-> That being said, these tools are the largest upheaval our industry has seen in decades. Even if you are not using them on a daily basis, you are well served to be aware of how they are evolving. This space is moving so fast that your experience from six months ago is likely no longer relevant. A side effect of this large turnover is skills is that any expertise you didn't gain six months ago is probably irrelevant today.
+> That being said, these tools are the largest upheaval our industry has seen in decades. Even if you are not using them on a daily basis, you are well served to be aware of how they are evolving. This space is moving so fast that your experience from six months ago is likely no longer relevant. A side effect of this large turnover in skills is that any expertise you didn't gain six months ago is probably irrelevant today.
 > 
 > Senior+ engineers are encouraged to use these tools in whatever way works best for them. That could be as an integral part of your daily workflow or just an occasional tool for proof of concepts for non-production code.
 
@@ -46,7 +46,7 @@ There is an inherent contradiction in AI boosters.
 
 These cannot both be true. It cannot be true that I have to be an AI maximalist at this very moment and also that everything I know today will be worthless in six months. [Why can't I just wait](https://www.ufried.com/blog/not_left_behind/) until six months from now and use the better models and techniques? I won't have to unlearn techniques that only exist to work around the immaturity of current tooling then. (I'm looking at you Ralph Loops.)
 
-We hire smart people and we trust them to do the job. I don't care what OS they use. I don't care what editor they use. I don't care LSP they use. And I don't care what AI tooling they use. I don't care if they're dipping their toe in for a prototype or if they're running a full-blown Gas Town. I care that they're delivering for our customers.
+We hire smart people and we trust them to do the job. I don't care what OS they use. I don't care what editor they use. I don't care what LSP they use. And I don't care what AI tooling they use. I don't care if they're dipping their toe in for a prototype or if they're running a full-blown Gas Town. I care that they're delivering for our customers.
 
 But as the policy says, the upheaval is real. You do have a professional duty to try these tools on occasion. The tooling I tried in June 2025 is much worse than the tooling I came back to in January 2026. I expect the tooling I'm using in June 2026 to be even better.
 
@@ -100,6 +100,6 @@ I could be wrong on this. Maybe AI is going to be so good that we'll be buried b
 # Should This Apply To My Team?
 Every team and company is different. This policy works for my team. It may or may not work for yours. We have an established ten year old code base that has gone through a lot of churn over the years. The regulatory environment we work in has gotten a lot more complicated over time. We have long-time customers who would not be happy if we started breaking things left-and-right in a rush to adopt AI tooling. You are probably not happy about tools you depend on doing that right now.
 
-Your constraints are different, so your policy should probably also be different. I know if I was working in a greenfield startup with same team, the constraints would be radically different, so the way we use AI would change accordingly.
+Your constraints are different, so your policy should probably also be different. I know if I was working in a greenfield startup with the same team, the constraints would be radically different, so the way we use AI would change accordingly.
 
 But you should have some kind of coherent philosophy around what you're trying to accomplish. Tokenmaxxing is not coherent. It's just counting lines of code again, this time with the added privilege of paying a 3rd party thousands of dollars for your bullshit metric. If that's what qualifies for leadership, perhaps we can replace you with an AI agent next? You owe it to your team (and yourself) to be better than that.
