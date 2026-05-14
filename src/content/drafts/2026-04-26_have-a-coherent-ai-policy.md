@@ -2,16 +2,16 @@ My very first job out of college was at a law firm with hundreds of paralegals. 
 
 The work was broken down into finely sliced tasks. Paralegals worked out of a queue of tasks, mostly of the same flavor. It was an assembly line for court filings; Taylorism brought to legal work.
 
-Before I started, a new executive had been brought in. One of her jobs was to streamline process. Her plan was simple. She was going to stand behind employees with a stopwatch and time how long it took them to complete tasks. KPIs would be setup based on those measurements.
+Before I started, a new executive had been brought in. One of her jobs was to streamline process. Her plan was simple. She was going to stand behind employees with a stopwatch and time how long it took them to complete tasks. KPIs would be set up based on those measurements.
 
 This went as well as you would expect. People don't perform tasks the same way they normally do when an executive is standing behind them with a stopwatch. She quickly learned how worthless this was.
 
-All that is a segue to the latest garbage KPI in software engineering, tokenmaxxing, and a first pass at a saner AI policy for engineering teams.
+All that is a segue to the latest garbage KPI in software engineering, tokenmaxxing, and the AI policy I wrote for my team.
 
 # WTF is Tokenmaxxing?
 Tokenmaxxing is the latest fad to come out of management who still, in the Year of our Lord 2026, do not understand that every metric will be gamed. That executive with the stopwatch didn't understand 20+ years ago and there are clearly leaders today who have not received the memo.
 
-The idea is that the company will encourage the adoption of AI tools by creating a leaderboard of who is using the most tokens. Much like any other naive metric put in front of engineers, [it immediately gets gamed](https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/). Just create a loop that wastes tokens and shoot to the top of the leaderboard. Or waste just enough to show that you're "using" AI, but not enough to explain your usage.
+The idea is that the company will encourage the adoption of AI tools by creating a leaderboard of who is using the most tokens. Much like any other naive metric , [engineers immediately game it](https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/). Just create a loop that wastes tokens and shoot to the top of the leaderboard. Or waste just enough to show that you're "using" AI, but not enough to explain your usage.
 
 This is what passes for leadership apparently. Creating easily gamed metrics for your team that are quickly divorced from actually helping people. Because at the end of the day, that's what we're here for, right? You're here to help people, right? That's what I'm here for. I'm here to help our customers accomplish their goals. I'm not here to use a certain number of tokens. Tokenmaxxing is a vanity metric masquerading as leadership.
 
@@ -22,7 +22,7 @@ I also don't need to enumerate the productivity concerns. Depending on which way
 
 But what I am confident of is that the current generation of LLMs is causing the biggest upheaval in software engineering in my almost twenty year career. And as the manager of a team, it's part of my job to have some position on that. So, after much discussion with the team, I quickly put together a guide describing our AI philosophy.
 
-Since putting this together, I have been shocked to talk to many developers at companies that have no such document. The mandate is simply to AI as hard as possible and hope it all works.
+Since putting this together, I've been surprised by how many developers I've spoken with who have no such document at work. The mandate is simply to AI as hard as possible and hope it all works.
 
 # TL;DR
 - No AI mandate
@@ -44,7 +44,7 @@ There is an inherent contradiction in AI boosters.
 1. If you don't get on the AI train now, you're going to be left behind.
 2. AI is moving so fast that everything you know today will be worthless in six months.
 
-These cannot both be true. It cannot be true that I have to be an AI maximalist at this very moment and also that everything I know today will be worthless in six months. [Why can't I just wait](https://www.ufried.com/blog/not_left_behind/) until six months from now and use the better models and techniques? I won't have to unlearn techniques that only exist to work around the immaturity of current tooling then. (I'm looking at you Ralph Loops.)
+It cannot be true that I have to be an AI maximalist at this very moment and also that everything I know today will be worthless in six months. [Why can't I just wait](https://www.ufried.com/blog/not_left_behind/) until six months from now and use the better models and techniques? I won't have to unlearn techniques that only exist to work around the immaturity of current tooling then. (I'm looking at you Ralph Loops.)
 
 We hire smart people and we trust them to do the job. I don't care what OS they use. I don't care what editor they use. I don't care what LSP they use. And I don't care what AI tooling they use. I don't care if they're dipping their toe in for a prototype or if they're running a full-blown Gas Town. I care that they're delivering for our customers.
 
@@ -57,7 +57,7 @@ But as the policy says, the upheaval is real. You do have a professional duty to
 > 
 > Humans ultimately make our architecture decisions, not AI. When there is a choice between accepting code that makes it easier for machines vs. code that is easier for humans, we prefer humans. If AI tooling is constantly spitting out code that does not conform to our coding standards, the AI tooling is what needs to change, possibly by improving our AGENTS.md file.
 
-AI maximalists will read this section and scoff. They're already vibe coding everything and have little to no idea what the generated code looks like. If we were a greenfield startup, I might take this approach as well. We are not a greenfield startup. We have a ten year old codebase full of contradicting styles brought in by different teams. It's full-blown [code archaeology](https://speakerdeck.com/arthurdoler/digging-into-the-matrix-practicing-code-archaeology) sometimes to figure out why something is the way it is.
+AI maximalists will read this section and scoff. They're already vibe coding everything and have little to no idea what the generated code looks like. If we were a greenfield startup, I might take this approach as well. We are not a greenfield startup. We have a ten year old codebase full of contradicting styles brought in by different teams. Sometimes it's full-blown [code archaeology](https://speakerdeck.com/arthurdoler/digging-into-the-matrix-practicing-code-archaeology) to figure out why something is the way it is.
 
 The AI maximalist bet is that models will improve at a rate that exceeds the tech debt they are accruing. This is similar to the bet that startups have made for years. It doesn't matter how bad the initial code is. The focus is on finding product-market fit and worrying about sustainability later. We have product-market fit though. We care about being able to work on this codebase for the next decade. Our customers care that our current features keep working.
 
@@ -80,7 +80,7 @@ The current generation of AI has quickly exposed that most people have no clue h
 
 How much you feel that junior engineers should use these tools is dependent on what you feel the role of junior on your team are and what your responsibility is to their careers. I do not expect junior engineers to be productive. I expect them to learn how to be productive. I expect them to make mistakes. I expect them to learn how to learn a codebase. I expect them to learn how to learn a domain. And if they're outsourcing most of that to an LLM, they're not going to learn how to think through it themselves.
 
-AI in its current form is far too leaky of an abstraction for these details to not constantly bubble up in any codebase or domain of reasonable complexity. Until that changes, juniors must learn and learning happens by doing.
+AI in its current form is far too leaky an abstraction for these details to not constantly bubble up in any codebase or domain of reasonable complexity. Until that changes, juniors must learn and learning happens by doing.
 
 You should be able to articulate in some way the role of juniors on your team and your responsibility for their growth, if any. The role and goals you have for them may be different than mine. That should drive your philosophy on how much tooling they should use.
 
@@ -95,7 +95,7 @@ Tokenmaxxing is disconnected from caring about people. I care about people, not 
 
 My team is a subset of the category of people. I care about people, therefore I care about my team too. And that means that forcing my team to use tools that actively piss them off on a daily basis is a Bad Thing.
 
-I could be wrong on this. Maybe AI is going to be so good that we'll be buried by competitors. Or maybe it's so good that the current economic system collapses too. I don't know where any of this is going, but I do know that I care about people. And AI is not people.
+I could be wrong on this. Maybe AI is going to be so good that we'll be buried by competitors. Or maybe it's so good that the current economic system collapses too. I don't know where any of this is going, but I do know that I care about people. AI is not people.
 
 # Should This Apply To My Team?
 Every team and company is different. This policy works for my team. It may or may not work for yours. We have an established ten year old code base that has gone through a lot of churn over the years. The regulatory environment we work in has gotten a lot more complicated over time. We have long-time customers who would not be happy if we started breaking things left-and-right in a rush to adopt AI tooling. You are probably not happy about tools you depend on doing that right now.
