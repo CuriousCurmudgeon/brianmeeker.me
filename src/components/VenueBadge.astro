@@ -1,0 +1,16 @@
+---
+const { venue, url } = Astro.props;
+
+const classes =
+  "inline-block border border-slate-400 bg-white px-2 py-0.5 text-xs uppercase tracking-wide no-underline";
+---
+
+{
+  url ? (
+    <a href={url} class={classes + " text-blue-700 font-bold hover:border-slate-800"}>
+      {venue}
+    </a>
+  ) : (
+    <span class={classes + " text-slate-600"}>{venue}</span>
+  )
+}

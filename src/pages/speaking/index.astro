@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import Layout from "../../layouts/Layout.astro";
+import TalkCard from "../../components/TalkCard.astro";
+import heroImage from "../../assets/speaking/brian_meeker_codemash_2020.jpg";
+import { getCollection } from "astro:content";
+
+const talks = (await getCollection('talks')).sort(
+  (a, b) =>
+    new Date(b.data.date).valueOf() -
+    new Date(a.data.date).valueOf()
+);
+---
+
+<Layout title="Brian Meeker: Speaking">
+  <div class="w-full max-w-6xl mx-auto px-4 py-8 sm:px-8">
+    <h1 class="text-2xl sm:text-4xl font-bold text-center">Speaking</h1>
+
+    <Image
+      class="mt-6 mx-auto"
+      src={heroImage}
+      alt="Brian Meeker speaking at CodeMash 2020"
+      widths={[480, 800, 1024]}
+      sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 1024px"
+    />
+
+    <ul class="mt-10 grid gap-6 md:grid-cols-2">
+      {
+        talks.map((talk) => (
+          <li class="flex">
+            <TalkCard {talk} />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>

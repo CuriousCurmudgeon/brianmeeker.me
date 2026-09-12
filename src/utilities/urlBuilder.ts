@@ -28,4 +28,12 @@ function buildUrl(post: CollectionEntry<'blog'>): string {
   return `/${year}/${month}/${day}/${slug}`;
 }
 
-export { buildUrl, buildUrlParts };
+function buildTalkSlug(talk: CollectionEntry<'talks'>): string {
+  return talk.id.replace('.md', '');
+}
+
+function buildTalkUrl(talk: CollectionEntry<'talks'>): string {
+  return `/speaking/${buildTalkSlug(talk)}`;
+}
+
+export { buildUrl, buildUrlParts, buildTalkSlug, buildTalkUrl };
