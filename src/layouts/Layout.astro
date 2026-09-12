@@ -8,6 +8,9 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
+// Evaluated at build time, so this advances whenever the site is deployed.
+const currentYear = new Date().getFullYear();
 ---
 
 <!DOCTYPE html>
@@ -45,7 +48,7 @@ const { title } = Astro.props;
       class="p-4 sm:py-6 sm:px-12 flex flex-col items-center gap-3 bg-green-900 text-xs"
     >
       <SocialLinks />
-      <div>© 2022 Copyright: Brian Meeker</div>
+      <div>© {currentYear} Brian Meeker</div>
     </footer>
 
     <!-- 100% privacy friendly analytics -->
