@@ -25,5 +25,8 @@
     "@types/node": "^24.13.4",
     "lodash": "^4.18.1",
     "tailwindcss": "^4.3.3"
+  },
+  "overrides": {
+    "postcss-selector-parser": "^6.1.6"
   }
 }
